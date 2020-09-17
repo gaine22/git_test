@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 금리연동형보험의 사업비 현황 - 메트라이프생명</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>금리연동형보험의 사업비 현황</h1>			
+			<section class="container">				
+				<table class="tblRsp txtR">
+					<caption>금리연동형보험의 조회일별 사업비 현황</caption>
+					<colgroup>
+						<col style="width:auto">
+						<col style="width:14.5%" span="6">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="txtL">기준일자</th>
+							<th scope="col">납입 주계약<br>보험료 합계(A)</th>
+							<th scope="col">공시이율 적립전 차감 사업비(B)</th>
+							<th scope="col">공시이율 적립전 차감 위험보험료(B)</th>
+							<th scope="col">적립대상금액(A-B)</th>
+							<th scope="col">책임준비금액(C)</th>
+							<th scope="col">책임준비금 적립률(C/A)*100</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="txtL" data-title="기준일자">2015/04/21</td>
+							<td data-title="납입 주계약 보험료 합계(A)" class="dbH">1,400,000</td>
+							<td data-title="공시이율 적립전 차감 사업비(B)" class="dbHPs">187,040</td>
+							<td data-title="공시이율 적립전 차감 위험보험료(B)" class="dbHPs">606</td>
+							<td data-title="적립대상금액(A-B)">1,212,344</td>
+							<td data-title="책임준비금액(C)">1,225,364</td>
+							<td data-title="책임준비금 적립률(C/A)*100" class="dbH">87.52%</td>
+						</tr>							
+					</tbody>
+				</table>
+				<div class="lnContBox">
+					<ul class="listDot">
+						<li>납입한 보험료 중 사업비, 위험보험료 및 특약보험료를 차감한 금액이 공시이율로 적립됩니다.</li>
+						<li>적립률(%)은 납입보험료 합계 대비 책임준비금의 비율이며, 중도인출이 있었던 계약의 적립률은 '[책임준비금( C ) + 중도인출금의 합계] / 주계약 납입보험료 합계(A)'로 계산된 비율입니다.</li>
+					</ul>
+				</div>
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>		
+	</body>
+</html>

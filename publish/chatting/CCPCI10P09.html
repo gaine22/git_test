@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 채팅상담창 - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap chatBox">
+			<h1>채팅상담</h1>			
+			<section class="container">
+				<div class="chatWrap">
+					<div class="chatList">
+						<ul>
+							<li class="cm">
+								<div class="chatTxt">
+									반갑습니다. 고객님<br>상담원 OOO입니다.
+								</div>
+								<p>오전 10:32</p>
+							</li>
+							<li class="cm">
+								<div class="chatTxt">
+									무엇을 도와드릴까요?
+								</div>
+								<p>오전 10:32</p>
+							</li>
+							<li class="cus">
+								<div class="chatTxt">
+									이번달에 납입해야 할 보험료를 알려주세요.
+								</div>
+								<p><span>읽음</span> 오전 10:34</p>
+							</li>
+							<li class="cus">
+								<div class="chatTxt">
+									다음달까지 같이 내면 할인 받을 수 있나요?
+								</div>
+								<p><span>읽음</span> 오전 10:34</p>
+							</li>
+							<li class="cm">
+								<div class="chatTxt">
+									잠시만 기다려주세요.
+								</div>
+								<p>오전 10:35</p>
+							</li>
+							<li class="cm">
+								<div class="chatTxt">
+									기다려 주셔서 감사합니다.
+								</div>
+								<p>오전 10:39</p>
+							</li>
+							<li class="cm">
+								<div class="chatTxt">
+									먼저 보유하신 상품은 유니버셜 기능이 있는 상품으로 선납은 가능하지 않습니다.
+								</div>
+								<p>오전 10:41</p>
+							</li>
+							<li class="cm">
+								<div class="chatTxt">
+									이달 보험료의 경우 원보험료는 99,405이지만 자동이체로 동계에서 수납 시 할인된 금약 98,457이 이체됩니다.
+								</div>
+								<p>오전 10:43</p>
+							</li>
+						</ul>
+					</div>
+					<div class="chatInput">
+						<textarea cols="3" rows="3" title="상담내용"></textarea>
+						<button type="button" class="btnIcon"><span class="hide">이모티콘첨부</span></button>
+						<button type="button" class="btnCont">전송</button>
+					</div>
+				</div>
+			</section>
+			<button type="button" class="btnWht uiPopClose uiLayerpop" data-dialogid="dialogEval">상담종료</button>
+		</div>
+		<section id="autoPop" class="uiDialog" role="dialog"><!-- 자동팝업 -->
+			<div class="dialogBase">
+				<h1>상담이 접수되었습니다.</h1>
+				<div class="chatPara">고객님, 빠른 연결 도와드리지 못해서 죄송합니다.<br>
+					지금 1분이 기다리고 계셔서 고객님과는 2분 후에 연결될 것 같습니다. 이전 상담이 길어지면 조금 더 길어질 수 있습니다.
+					<div class="btnWrap">
+						<a href="#none" class="btnCont">닫기</a>
+					</div>
+				</div>
+				<button type="button" class="uiPopClose">닫기</button>
+			</div>
+		</section>
+		
+		<section id="dialogEval" class="uiDialog" role="dialog">
+			<div class="dialogBase">
+				<h1>상담종료</h1>
+				<div class="chatPara">
+					채팅을 종료하시겠습니까?<br>
+					채팅 종료 시 상담 내용은 다시 확인할수 없습니다.
+					<div class="btnWrap">
+						<a href="#none" class="btnCont">예</a>
+						<a href="#none" class="btnLine">아니오</a>
+					</div>
+				</div>
+				<button type="button" class="uiPopClose">닫기</button>
+			</div>
+		</section>
+		
+		<section id="" class="uiDialog" role="dialog">
+			<div class="dialogBase">
+				<h1>채팅상담 만족도 평가하기</h1>
+				<div class="evalBox">
+					고객님, 답변은 만족스러우셨습니까?
+					<div class="evalList">
+						<p><input type="radio" name="evalP" id="eval1"><label for="eval1">매우만족</label></p>
+						<p><input type="radio" name="evalP" id="eval2"><label for="eval2">만족</label></p>
+						<p><input type="radio" name="evalP" id="eval3"><label for="eval3">보통</label></p>
+						<p><input type="radio" name="evalP" id="eval4"><label for="eval4">불만</label></p>
+						<p><input type="radio" name="evalP" id="eval5"><label for="eval5">매우불만</label></p>
+					</div>
+					<div class="btnWrap">
+						<a href="#none" class="btnCont">확인</a>
+					</div>
+				</div>
+				<button type="button" class="uiPopClose">닫기</button>
+			</div>
+		</section>
+		
+		<script>
+			$('#autoPop').uiDialog({ auto : true });
+			$('.uiLayerpop').uiDialog();
+		</script>
+	</body>
+</html>

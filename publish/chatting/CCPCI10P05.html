@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 상담정보입력 - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>채팅상담</h1>			
+			<section class="container">
+				<h2 class="h16">연락처와 상담하실 내용을 입력해 주세요.</h2>
+				<div class="formWrap emailFormBox">
+					<div class="inputBox">
+						<label for="name">이름</label>
+						<input type="text" id="name">		
+					</div>
+					<div class="inputBox">
+						<label for="mail">이메일</label>
+						<div class="emailBox">
+							<div class="emBox">
+								<span><input type="text" id="mail" title="이메일 아이디"></span>
+								<span><input type="text" title="이메일 도메인"></span>
+							</div>
+							<select class="uiSelect" title="메일도메인">
+								<option>직접입력</option>
+								<option>metlife.com</option>
+								<option>dreamwiz.com</option>
+							</select>
+						</div>
+					</div>	
+					<div class="inputBox">
+						<label for="chgNum">전화번호</label>
+						<div class="phoneBox">
+							<span>
+							<select class="uiSelect" id="chgNum">
+								<option>선택</option>
+							</select>
+							</span>
+							<span><input type="text" title="변경하실 전화번호 중간자리"></span>
+							<span><input type="text" title="변경하실 전화번호 끝자리"></span>
+						</div>
+					</div>
+					<div class="inputBox">
+						<label for="conts">문의내용</label>
+						<textarea id="conts" cols="5" rows="5"></textarea>	
+					</div>
+				</div>
+				<div class="btnWrap">
+					<a href="#none" class="btnCont">상담접수</a>
+					<a href="#none" class="btnLine">취소</a>
+				</div>
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 사이버창구 이용가이드 - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>사이버창구 이용가이드</h1>			
+			<section class="container srvGuide">
+				<div class="tabWrap gTabWrap uiDrop">
+					<button type="button" class="uiDropBtn btnSelect">공인인증서 이용안내</button>
+					<ul class="uiDropCont">
+						<li><a href="#none">사이트이용<br> 자주하는질문</a></li>
+						<li class="on"><a href="#none">공인인증서<br> 이용안내</a></li>
+						<li><a href="#none">비밀번호<br> 이용안내</a></li>
+						<li><a href="#none">서비스<br> 이용안내</a></li>
+						<li><a href="#none">이용시간<br> 안내</a></li>
+						<li><a href="#none">전자금융거래<br> 유의사항</a></li>
+						<li><a href="#none">보안<br>프로그램</a></li>
+						<li class="onlyW"><a href="#none">모바일창구<br> 가이드</a></li>
+					</ul>
+				</div>
+				<div class="subTabWrap">
+					<h2>공인인증서 이용안내</h2>
+					<div class="subTabBox">
+						<ul>
+							<li><a href="#none">공인인증서란</a></li>
+							<li><a href="#none"><span class="onlyW">공인</span>인증서 발급</a></li>
+							<li class="on"><a href="#none"><span class="onlyW">공인</span>인증서 오류</a></li>						
+						</ul>
+					</div>
+				</div>		
+				<div class="tabConts">		
+					<h3 class="hide">공인 인증서 오류</h3>
+					<p>공인인증서 사용시 오류 별 해결방법에 대해 알려드립니다.</p>
+					<div class="srvErrorBox">
+						<div>
+							<span class="exImg"><img src="../../images/srv_certi01.gif"></span>
+							<strong>인증서 암호가 올바르지 않다는 에러가 나오는 경우</strong>
+							인증서 암호는 대소문자를 구분합니다. 키보드 상단의 &lt; Caps Lock &gt; 키가 켜져 있는지 확인하시고 다시 입력해보시기 바랍니다. 							
+						</div>
+						<div>
+							<span class="exImg"><img src="../../images/srv_certi02.gif"></span>
+							<strong>주민등록번호가 올바르지 않다는 에러가 나오는 경우</strong>
+							<ul class="listHyphen">
+								<li>암호(주민번호) 입력 후에 엔터를 치지 마시고 마우스로 확인을 클릭하십시오.</li>
+								<li>계약자의 주민등록번호와 공인인증서의 주민등록번호가 일치하는지 확인해 보시기 바랍니다.</li>
+							</ul>						
+						</div>
+						<div>
+							<span class="exImg"><img src="../../images/srv_certi03.gif"></span>
+							<strong>제출한 인증서가 폐기되었다고 나오는 경우</strong>
+							공인인증서가 폐기되었는지 아래의 방법으로 확인해 보시기 바랍니다. 							
+							<ul class="exList">
+								<li>
+									<span class="exImg"><img src="../../images/srv_certi0301.gif"></span>
+									<p>1. 인증서 선택창에서 인증서 보기를 클릭합니다.</p>
+								</li>
+								<li>
+									<span class="exImg"><img src="../../images/srv_certi0302.gif"></span>
+									<p>2. “인증서가 폐기되었습니다” 라고 나온다면 인증 갱신/재발급 받으시고 이용하십시오.</p>
+								</li>
+							</ul>				
+						</div>
+						<div>
+							<span class="exImg"><img src="../../images/srv_certi04.gif"></span>
+							<strong>공인인증서가 만기되었다는 나오는 경우</strong>
+							<ul class="listHyphen">
+								<li>만료일이 지났다면 공인인증서를 갱신/재발급 받으시고 이용하시기 바랍니다. </li>
+								<li>만료일이 지나지 않았다면, 고객님의 PC의 시간이 올바르지 않는 문제일 수도 있습니다. 윈도우 전체 화면에서 오른쪽 아래에 시간에 마우스 더블 클릭을 하시면 날짜 및 시간 등록정보가 나옵니다. 여기서 현재시간으로 시간을 조정하십시오. </li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>	
+		<script>			
+			$('.gTabWrap').uiDropdowns();
+			$('.uiAcco').uiAccordion();
+		</script>
+			
+	</body>
+</html>

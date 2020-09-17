@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 우편번호 찾기(도로명주소) - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>우편번호 찾기</h1>
+			<section class="postWrap">
+				<div class="uiDrop exeTab">
+					<button type="button" class="uiDropBtn btnSelect">새주소(도로명 주소)</button>
+					<div class="uiDropCont" role="tablist">
+						<a href="#none" class="on" role="tab" aria-selected="true">새주소(도로명 주소)</a>
+						<a href="#none" role="tab">이전주소(읍/면/동)</a>
+					</div>
+				</div>
+				<div class="postSrcBox">
+					<div class="postL">
+						<h2>1. 찾고자 하는 지역의 "도로명"을 입력해주십시오. <span>예: 서울시 강남구 테헤란로 &rarr; "선릉"만 입력</span></h2>
+						<div class="addrInp">
+							<div class="addrSrc">
+								<label for="str">도로명</label><input type="text" id="str">
+								<input type="button" class="btnLine" value="검색">
+							</div>					
+							<div class="addrSel">
+								<div>
+									<select title="시/도" class="uiSelect">
+										<option>시/도</option>
+									</select>
+								</div>
+								<div>
+									<select title="시/군/구" class="uiSelect">
+										<option>시/군/구</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<h2>2. 범위에 해당하는 주소를 선택하세요.</h2>
+						<div class="addrList">
+							<ul>
+								<li><a href="#none"><span>[06134]</span>서울 강남구 테헤란로 101</a></li>
+								<li><a href="#none"><span>[06134]</span>서울 강남구 테헤란로 103</a></li>
+								<li><a href="#none"><span>[06232]</span>서울 강남구 테헤란로 105</a></li>
+								<li><a href="#none"><span>[06233]</span>서울 강남구 테헤란로 108</a></li>
+							</ul>
+							<!-- 검색된 결과가 없을때 -->
+							<p>조회된 데이터가 없습니다. </p>
+							<!--// 검색된 결과가 없을때 -->
+						</div>
+						<h2>3. 나머지 주소를 입력하시고 확인을 누르세요.</h2>
+						<div class="addrInp">
+							<div class="addrSrc">
+								<label for="scAddr">검색된 주소</label><input type="text" id="scAddr" disabled="disabled">
+							</div>
+							<div class="addrSrc">
+								<label for="dtAddr">나머지 주소</label><input type="text" id="dtAddr">
+								<input type="button" class="btnLine" value="확인">
+							</div>	
+						</div>
+						<h2>4. 다수의 주소가 존재할 경우 하나를 선택해 주십시오.</h2>
+						<div class="addrList">
+							<ul>
+								<li><a href="#none"><span>[12345]</span>서울 강남구 테헤란로</a></li>
+								<li><a href="#none"><span>[12346]</span>서울 강남구 테헤란로 100길</a></li>
+								<li><a href="#none"><span>[12347]</span>서울 강남구 테헤란로 200길</a></li>
+								<li><a href="#none"><span>[12348]</span>서울 강남구 테헤란로 300길</a></li>
+							</ul>
+							<!-- 검색된 결과가 없을때 -->
+							<p>존재하지 않는 건물번호입니다.</p>
+							<!--// 검색된 결과가 없을때 -->
+						</div>
+					</div>
+					<div class="postR">
+						<h2>다음 중 반영할 주소 하나를 선택하십시오.</h2>
+						<div class="detAddr">
+							<p>
+								<input type="radio" name="addr" id="addr1" checked="checked"><label for="addr1" class="checked">도로명 주소</label>
+								<span>[12345]</span>
+								<span>서울 강남구 테헤란로 101</span>
+								<span>테헤란빌딩 5층</span>
+							</p>
+							<p>
+								<input type="radio" name="addr" id="addr2"><label for="addr2">입력 주소</label>
+								<span>[12345]</span>
+								<span>서울 강남구 테헤란로</span>
+								<span>123</span>
+							</p>
+							<p>
+								<em>표준화 지번주소</em>
+								<span>[12345]</span>
+								<span>서울 강남구 테헤란로</span>
+								<span>123</span>
+							</p>
+						</div>	
+						<div class="btnWrap">
+							<a href="#none" class="btnCont">반영</a>
+						</div>				
+					</div>			
+				</div>
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>
+	</body>
+</html>

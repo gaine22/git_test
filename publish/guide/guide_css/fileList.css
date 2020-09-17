@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0; padding:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+body{line-height:1;}
+h1, h2, h3, h4, h5, h6, input, select, textarea, option, label, button{font-size:100%; font-weight:normal;}
+fieldset, img, abbr, acronym{border:0 none;}
+ol, ul{list-style:none;}
+table{border-collapse:collapse; border-spacing:0;}
+adress, em{font-style:normal;}
+img, a, input, select, textarea, label, button, span, em, strong{vertical-align:baseline;}
+hr{display:none;}
+a { color:#000; }
+/* common */
+html, body { width:100%; height:100%; font-size:12px; font-family:'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica; }
+html { overflow-y:scroll;}
+body { min-width:1000px; color:#4a4a4a; }
+caption, legend{overflow:hidden; width:0; height:0; font-size:0; line-height:0; visibility:0;}
+
+@font-face{font-family:'nbg'; src:url("/WebContent/fonts/NANUMBARUNGOTHIC.eot")}
+.l_eg { font-family:arial; }
+
+/* 본문스타일 */
+.ing_box { margin-top:20px; }
+
+h1 { padding:15px 0; text-align:center; background:#2377c5; }
+h1 img { width:100px; }
+h1 span { display:inline-block; padding:10px 50px; -webkit-border-radius:5px; border-radius:5px; font-size:20px; color:#fff; background:#999; }
+
+table { border-bottom:1px solid #ccc; } 
+table tr:hover td { background:#EAEAEA; }
+table tr.t_group { border-top:2px solid #666; }
+th { padding:5px 0; color:#fff; background:#8f949a; border-top:1px solid #ccc; border-left:1px solid #ccc }
+td { padding:7px 5px; border-top:1px solid #ccc; border-left:1px solid #ccc; line-height:16px }
+th:first-child, td:first-child { border-left:0; }
+th a{color:#fff;}
+
+table tr.delCont { text-decoration:line-through;  }
+table tr.delCont td { background:#BDBDBD; }
+table tr.menuLine { border-bottom:2px solid #000; }
+
+select { border: 1px solid #333; padding: 3px; margin: 10px 5px 0; }
+
+.p_id, .p_end, .p_sta, .p_owner { text-align:center; }
+
+.ico_end { background:#A6A6A6; border-radius:3px; padding:3px 5px; font-size:11px; color:#fff; font-weight:bold; }
+.ico_etc { display:inline-block; margin-top:5px;  border-radius:3px; background:#A6A6A6; padding:3px 5px; font-size:11px; font-weight:bold; color:#fff; }
+
+.siteInfo { position:relative; width:100%; background:#f5f5f5; box-sizing:border-box; padding:20px; }
+.siteInfo:before { position:absolute; content:" "; top:20px; left:50%; display:block; width:1px; height:70%; border-left:1px dotted #b6b1b1; }
+.siteInfo:after { content:" "; display:block; clear:both; } 
+.siteInfo h2 { font-size:13px; font-weight:bold; margin:15px 0 10px 0;  }
+.siteInfo h2:first-child { margin-top:0; }
+.siteInfo .infoL { float:left; width:50%; }
+
+.siteInfo .infoR { float:right; width:48%; }
+.siteInfo .infoR ul li { float:left; margin-right:10px; text-align:center;  }
+.siteInfo .infoR ul li span { display:block; }
+
+[class^=ico_r] { margin-top:10px; width:50px; height:50px; font-size:16px; border-radius:50%; border:2px solid #6799FF; text-align:center; line-height:50px; }
+.ico_re { border-color:#A6A6A6; }
+.ico_rc { border-color:#444; }
+
+.siteInfo .infoL ul { margin-left:1px;  }
+.siteInfo .infoL ul:after { content:""; display:block; clear:both;  }
+.siteInfo .infoL li { float:left; }
+
+.siteInfo .infoL li a { position:relative; display:block; border:1px solid #ccc; color:#666; background:#fff; padding:8px 15px 9px 15px; text-decoration:none; margin-left:-1px; transition:border .5s, background .5s, color .5s; z-index:1; }
+.siteInfo .infoL li a:hover, .siteInfo .infoL li.on a { border:1px solid #444; z-index:2; color:#000; }

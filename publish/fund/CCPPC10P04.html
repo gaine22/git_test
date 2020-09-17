@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 펀드운용성과(수익률) - 메트라이프생명</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>펀드운용성과(수익률)</h1>			
+			<section class="container">				
+				<div class="infoBox">
+					<ul class="listHyphen">
+						<li>펀드명을 선택하시면 기간별 변동추이를 확인할 수 있습니다.</li>
+						<li>기준가격 및 수익률 기준 2016/09/08 현재</li>
+					</ul>
+				</div>	
+				<div class="tipGrp">
+					<span>기준가격 <button type="button" class="uiLayerpop btnTip" data-dialogid="dialogStand">자세히보기</button></span>
+					<span>누적수익율 <button type="button" class="uiLayerpop btnTip" data-dialogid="dialogAcc">자세히보기</button></span><br class="onlyM">
+					<span>연환산수익률 <button type="button" class="uiLayerpop btnTip" data-dialogid="dialogExc">자세히보기</button></span>
+					<span>기간수익률 <button type="button" class="uiLayerpop btnTip" data-dialogid="dialogTerm">자세히보기</button></span>
+				</div>		
+				<table class="tblRsp smT">
+					<caption>펀드기간별 변동추이</caption>
+					<colgroup>		
+						<col style="width:auto">
+						<col style="width:8%">
+						<col style="width:9.5%">
+						<col style="width:9.5%">
+						<col style="width:8%">
+						<col style="width:9.5%" span="3">		
+						<col style="width:8%" span="3">						
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2" class="txtL">펀드명</th>
+							<th scope="col" rowspan="2">기준가격</th>
+							<th scope="col" rowspan="2">전일대비</th>
+							<th scope="col" rowspan="2">누적수익률</th>
+							<th scope="col" rowspan="2">연환산<br>수익률</th>
+							<th scope="colgroup" colspan="6">기간수익률</th>
+						</tr>
+						<tr>
+							<th scope="col">직전1개월</th>
+							<th scope="col">직전3개월</th>
+							<th scope="col">직전6개월</th>
+							<th scope="col">직전1년</th>
+							<th scope="col">직전3년</th>
+							<th scope="col">직전5년</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-title="펀드명" class="txtL"><a href="#none">MMF형</a></td>
+							<td data-title="기준가격">1529.02</td>
+							<td data-title="전일대비"><span class="ico_pointU"><span class="hide">증가</span>4579.14</span></td>
+							<td data-title="누적수익률">100.00%</td>
+							<td data-title="연환산수익률">100.00%</td>
+							<td data-title="직전1개월" class="subH" data-head="[기간수익률]">100.00%</td>
+							<td data-title="직전3개월">100.00%</td>
+							<td data-title="직전6개월">100.00%</td>
+							<td data-title="직전1년">100.00%</td>
+							<td data-title="직전3년">100.00%</td>
+							<td data-title="직전5년">100.00%</td>
+						</tr>	
+						<tr>
+							<td data-title="펀드명" class="txtL"><a href="#none">혼합안정형</a></td>
+							<td data-title="기준가격">1529.02</td>
+							<td data-title="전일대비"><span class="ico_pointD"><span class="hide">감소</span>0.12</span></td>
+							<td data-title="누적수익률">-100.00%</td>
+							<td data-title="연환산수익률">-100.00%</td>
+							<td data-title="직전1개월" class="subH" data-head="[기간수익률]">-100.00%</td>
+							<td data-title="직전3개월">-100.00%</td>
+							<td data-title="직전6개월">-100.00%</td>
+							<td data-title="직전1년">-100.00%</td>
+							<td data-title="직전3년">-100.00%</td>
+							<td data-title="직전5년">-100.00%</td>
+						</tr>					
+					</tbody>
+				</table>
+				<div class="varyView">
+					<h2>기간별 변동추이</h2>
+					<p>
+						<span><a href="#none" class="btnWht">1개월 <em>그래프보기</em></a></span>
+						<span><a href="#none" class="btnWht">3개월 <em>그래프보기</em></a></span>
+						<span><a href="#none" class="btnWht">4개월 <em>그래프보기</em></a></span>
+						<span><a href="#none" class="btnWht">12개월 <em>그래프보기</em></a></span>
+					</p>
+					<div class="graphBox">
+						<img src="../../images/@graph.gif" alt="월별수익률그래프">
+					</div>
+					<div class="lnContBox">							
+						<strong class="infoTit">알려드려요!</strong>
+						<ul class="listDot">
+							<li>변액보험은 국내외 주식시장의 상황에 따라 펀드 운용실적이 매일 변동되며 과거 펀드수익률이 미래 펀드 수익률을 결정하는 것은 아닙니다.</li>
+							<li>펀드수익률은 수익률 산출기간의 시작일 및 종료일의 펀드 기준가격만 반영된 수익률로 보험료 납일일의 기준가격 및 투자기간 중 일별 수익률이 반영되지 않아 변액보험 상품의 실제 과거 수익률과는 다르며 고객별 실제계약약나이,납입기간,중도인출/보험계약대출 발생여부 등에 따라 실제 계약의 수익률과도 차이가 있습니다.</li>
+						</ul>				
+					</div>
+				</div>
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>	
+		<section id="dialogStand" class="uiDialog" role="dialog">
+			<div class="dialogBase">
+				<h1>기준가격</h1>
+				<div class="mathCont">
+					<div class="mathBox">
+						<span class="rstVal">좌당 기준가격 =</span>
+						<p>
+							<span class="nume">당일 특별계정의 순자산가치</span>
+							<span class="denom">특별계정 총 좌수</span>
+						</p>
+					</div>
+					<span>순자산가치 = 당일 특별계정의 총 자산 – 특별계정운용수수료 - 최저사망보험금보증비용</span>
+					<p class="listHyphen sm">해당 시점의 특별계정 순자산가치를 특별계정 총 좌수로 나눈 금액이며, 펀드설정일의 기준가격은 1,000좌당 1,000원 입니다</p>
+				</div>
+				<button type="button" class="uiPopClose">닫기</button>
+			</div>
+		</section>
+		<section id="dialogAcc" class="uiDialog" role="dialog">
+			<div class="dialogBase">
+				<h1>누적수익률</h1>
+				<div class="mathCont">
+					<div class="mathBox">
+						<span class="rstVal">누적 수익률 =</span>
+						<p>
+							<span class="nume">오늘의 기준가격 - 펀드설정일의 기준가격</span>
+							<span class="denom">펀드설정일의 기준가격</span>
+						</p>
+						<span class="rstVal">X 100</span>
+					</div>
+					<span>최초 펀드설정일자 부터 현재까지의 누적수익률</span>
+				</div>
+				<button type="button" class="uiPopClose">닫기</button>
+			</div>
+		</section>
+		<section id="dialogExc" class="uiDialog" role="dialog">
+			<div class="dialogBase">
+				<h1>연환산수익률</h1>
+				<div class="mathCont">
+					<div class="mathBox">
+						<span class="rstVal">연환산수익률 =</span>
+						<span class="rstVal">누적수익률 X</span>
+						<p>
+							<span class="nume">365</span>
+							<span class="denom">경과일수 (오늘날짜 - 펀드설정일)</span>
+						</p>
+						
+					</div>
+					<span>누적수익률을 1년 기준으로 환산한 연간 수익률</span>
+				</div>
+				<button type="button" class="uiPopClose">닫기</button>
+			</div>
+		</section>
+		<section id="dialogTerm" class="uiDialog" role="dialog">
+			<div class="dialogBase">
+				<h1>기간수익률</h1>
+				<div class="mathCont">
+					<div class="mathBox">
+						<span class="rstVal">기간수익률 =</span>
+						<p>
+							<span class="nume">오늘의 기준가격 - 기초 기준가격</span>
+							<span class="denom">기초 기준가격</span>
+						</p>
+						<span class="rstVal">X 100</span>
+					</div>
+					<span>기초 기준가격이란, 기간의 기초가 되느날 (1개월, 3개월, 6개월, 1년, 5년 전) 기준가격</span>
+				</div>
+				<button type="button" class="uiPopClose">닫기</button>
+			</div>
+		</section>
+		<script>
+			$('.uiLayerpop').uiDialog();
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title></title>
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/plugins.css">
+  <style>
+	.guideTitle {display:block; font-weight:bold; padding:10px 10px 0 20px; color:#0061a0;}
+	.guidebox {padding:15px 20px;}
+	.guidebox > p {padding-top:15px;}
+	.guidebox > p:first-child {padding-top:0;}
+	.guidebox select {width:200px;}
+  </style>
+ </head>
+
+ <body style="background:#fff;">
+  <strong class="guideTitle">button</strong>
+  <div class="guidebox">
+	<p>
+		<a href="#none" class="btnCont">확인</a>
+		<button type="button" class="btnCont">확인</button>
+		<input type="button" class="btnCont" value="확인">
+	</p>
+	<!-- 
+	<p>
+		<a href="#none" class="btnCont gr">확인</a>
+		<button type="button" class="btnCont gr">확인</button>
+		<input type="button" class="btnCont gr" value="확인">
+	</p>
+	 -->
+	<p>
+		<a href="#none" class="btnCont gray">확인</a>
+		<button type="button" class="btnCont gray">확인</button>
+		<input type="button" class="btnCont gray" value="확인">
+	</p>
+  </div>
+
+  <strong class="guideTitle">textbox</strong>
+  <div class="guidebox">
+	<input type="text" placeholder="이름"> <input type="text" value="생일" disabled="disabled">
+  </div>
+
+  <strong class="guideTitle">radio / chcekbox</strong>
+  <div class="guidebox">
+	<p>
+		<input type="radio" name="radio1" id="radio1_1" checked="checked"><label for="radio1_1">이메일 수신</label>
+		<input type="radio" name="radio1" id="radio1_2"><label for="radio1_2">우편 수신</label>
+		<input type="radio" name="radio1" id="radio1_3" disabled="disabled"><label for="radio1_3" class="disabled">택배 수신</label>
+		<input type="radio" name="radio1" id="radio1_4" disabled="disabled" checked="checked"><label for="radio1_4" class="checked disabled">직접 수신</label>
+	</p>
+	<p>
+		<input type="checkbox" id="check1_1" checked="checked"><label for="check1_1">종신</label>
+		<input type="checkbox" id="check1_2"><label for="check1_2">건강</label>
+		<input type="checkbox" id="check1_3"><label for="check1_3">암</label>
+		<input type="checkbox" id="check1_4" disabled="disabled"><label for="check1_4" class="disabled">골절</label>
+		<input type="checkbox" id="check1_5" disabled="disabled" checked="checked"><label for="check1_5" class="checked disabled">수술</label>
+	</p>
+  </div>
+
+  <strong class="guideTitle">전체선택/해제</strong>
+  <div class="guidebox">	
+	<input type="checkbox" name="check_group_name" id="check_1_1"><label for="check_1_1">개인정보 이용 동의</label><br>
+	<input type="checkbox" name="check_group_name" id="check_1_2"><label for="check_1_2">고유식별정보 처리 동의</label><br>
+	<input type="checkbox" name="check_group_name" id="check_1_3"><label for="check_1_3">통신사 이용약관 동의</label><br>
+	<input type="checkbox" name="check_group_name" id="check_1_4"><label for="check_1_4">서비스 이용약관 동의</label>
+
+	<p><input type="checkbox" id="check_all" data-all-check="check_group_name"><label for="check_all">위 약관에 전체 동의합니다.</label></p>
+  </div>
+	
+  
+  <strong class="guideTitle">select</strong>
+  <div class="guidebox">
+	<label for="sel">선택</label>
+	<select title="셀렉트 제목" id="sel" class="uiSelect" data-select-id="sel_2">
+		<option value="0">두번째 셀렉트 1</option>
+		<option value="1" disabled="disabled">두번째 셀렉트 2</option>
+		<option value="2" selected="selected">두번째 셀렉트 3</option>
+		<option value="3">두번째 셀렉트 3</option>
+		<option value="4">두번째 셀렉트 4</option>
+		<option value="5">두번째 셀렉트 5</option>
+		<option value="6">두번째 셀렉트 6</option>
+		<option value="7">두번째 셀렉트 7</option>
+		<option value="8">두번째 셀렉트 8</option>
+		<option value="9">두번째 셀렉트 9</option>
+		<option value="10">두번째 셀렉트 10</option>
+		<option value="11">두번째 셀렉트 11</option>
+		<option value="12">두번째 셀렉트 12</option>
+	</select>
+	<!--
+	<br><br>
+	<div class="stSelect">
+		<select title="">
+			<option>2000</option>
+			<option>1999</option>
+			<option>1998</option>
+		</select>
+	</div>
+	-->
+  </div>
+
+  <strong class="guideTitle">dropdown</strong>
+  <div class="guidebox">
+	<div class="uiDrop exeDrop">
+		<button type="button" class="uiDropBtn btnSelect">button</button>
+		<div class="uiDropCont ps_tl">
+			content
+		</div>
+	</div>
+  </div>
+
+  <strong class="guideTitle">tooltip</strong>
+  <div class="guidebox">
+	<p>
+		새는 알에서 나오려고 <a href="#tooltip1" class="uiTooltip" data-tooltipid="tooltip1">투쟁한다.</a><br>
+		알은 세계이다.
+	</p>
+	<div id="tooltip1" class="uiTooltipCont" role="tooltip">
+		<span class="arrow"></span>
+		<h1>투쟁하다</h1>
+		<p>어떤 대상을 이기거나 극복하기 위해 싸운다.<br>
+		사회 운동, 노동 운동 따위에서 무엇인가를 쟁취하고자 견해가 다른 사람이나 집단 간에 싸우다.<br>
+		유의어 : 투한하다. 다투다. 싸우다.</p>
+		<button type="button" class="uiClose btn_base">닫기</button>
+	</div>
+  </div>
+
+  <strong class="guideTitle">alert</strong>
+  <div class="guidebox">
+	<div class="msgBox">
+		<p>김철수님께서 납입하고자 하시는 보험료입니다.<br>
+		횟수나 총 납입보험료 변경 후 재계산 버튼을 누르시면 할인액 실납입액을 확인하실 수 있습니다.</p>
+	</div>
+	<br>
+	<div class="msgBox info">
+		<p>김철수님께서 납입하고자 하시는 보험료입니다.<br>
+		횟수나 총 납입보험료 변경 후 재계산 버튼을 누르시면 할인액 실납입액을 확인하실 수 있습니다.</p>
+	</div>
+  </div>
+
+  <strong class="guideTitle">tab</strong>
+  <div class="guidebox">
+	<div class="uiTab exeTab">
+		<div class="tabBtns">
+			<a href="#unique-A" id="tab1" class="uiBtn">Tab 1</a>
+			<a href="#unique-B" id="tab2" class="uiBtn">Tab 2</a>
+			<a href="#unique-C" id="tab3" class="uiBtn">Tab 3</a>
+		</div>
+		<div class="tabPanels">
+			<section id="unique-A" class="uiPanel">
+				Tab1 내용
+			</section>
+			<section id="unique-B" class="uiPanel">
+				Tab2 내용
+			</section>
+			<section id="unique-C" class="uiPanel">
+				Tab3 내용
+			</section>
+		</div>
+	</div>
+  </div>
+
+  <strong class="guideTitle">accordion</strong>
+  <div class="guidebox">
+	<div class="uiAcco accoBase">
+		<button type="button" class="acBtnAll"><span>전체열기</span></button>
+		<div class="accoWrap">
+			<div class="acBtnWrap">
+				<strong class="accoTit" id="acco1">청약철회 후 보험료 반송은 언제 이루어 지나요?</strong>
+				<a href="#panel1" class="accoBtn"><span class="txt">열기</span></a>
+			</div>
+			<div id="panel1" class="accoPnl">
+				The MetLife Preferred Dentist program is a Dental Preferred Provider Organization (PPO) plan that is designed to save you money on dental services.1  You can choose from thousands of participating general dentists and specialists nationwide. Plus, with this plan you will enjoy lower out-of-pocket costs for in-network services, freedom to use any dentist and less paperwork.
+			</div>
+		</div>
+		<div class="accoWrap">
+			<div class="acBtnWrap">
+				<strong class="accoTit" id="acco2">보험 가입 당시 계약자, 피보험자가 알려야 할 사항을 성실히 이행하지 않았을 경우</strong>
+				<a href="#panel2" class="accoBtn"><span class="txt">열기</span></a>
+			</div>
+			<div id="panel2" class="accoPnl">
+				A participating dentist is a general dentist or specialist who has agreed to accept negotiated fees as payment in full for covered services provided to plan members. Negotiated fees typically range from 15% - 45% less than the average charges in a dentist's community for similar services.
+			</div>
+		</div>
+		<div class="accoWrap">
+			<div class="acBtnWrap">
+				<strong class="accoTit" id="acco3">보험 가입 후 직업, 운전 유무, 병력 사항이 변동 되었는데 별도로 회사에 알리지 않아도 되나요?</strong>
+				<a href="#panel3" class="accoBtn"><span class="txt">열기</span></a>
+			</div>
+			<div id="panel3" class="accoPnl">
+				You can find the names, addresses, specialties, languages spoken and telephone numbers of participating dentists in a given area by searching our online directory
+			</div>
+		</div>
+		<div class="accoWrap">
+			<div class="acBtnWrap">
+				<strong class="accoTit" id="acco4">효력상실 된지 2년이 지났습니다. 부활이 가능한지요?</strong>
+				<a href="#panel4" class="accoBtn"><span class="txt">열기</span></a>
+			</div>
+			<div id="panel4" class="accoPnl">
+				offers continuous coverage that you can buy on your own and take from one job to the next.
+			</div>
+		</div>
+		<div class="accoWrap">
+			<div class="acBtnWrap">
+				<strong class="accoTit" id="acco5">변액안내장에 납입횟수가 실제 납입횟수와 다른이유가 뭔가요?</strong>
+				<a href="#panel5" class="accoBtn"><span class="txt">열기</span></a>
+			</div>
+			<div id="panel5" class="accoPnl">
+				All dental offices that participate in the network provide emergency access 24 hours a day, 7 days a week. If you cannot reach your selected participating dentist, you may receive emergency care from any licensed dental care professional. The definition of what is considered "emergency care" and other specifics can be found in the Evidence of Coverage located in your enrollment booklet.
+			</div>
+		</div>
+		<div class="accoWrap">
+			<div class="acBtnWrap">
+				<strong class="accoTit" id="acco6">변액상품은 원금보장이 언제 되나요?</strong>
+				<a href="#panel6" class="accoBtn"><span class="txt">열기</span></a>
+			</div>
+			<div id="panel6" class="accoPnl">
+				Any copayment amount for specialty services is listed in your Schedule of Benefits.
+			</div>
+		</div>
+	</div>
+  </div>
+<!--
+	<strong class="guideTitle">paging</strong>
+	<div class="guidebox">
+		<div class="paging">
+			<a href="#none" class="pagingPrev">이전 페이지로 이동</a>
+			<span class="list">
+				<strong>1</strong>
+				<a href="#none">2</a>
+				<a href="#none">3</a>
+				<a href="#none">4</a>
+				<a href="#none">5</a>
+			</span>
+			<a href="#none" class="pagingNext">다음 페이지로 이동</a>
+		</div>
+	</div>
+-->
+	<strong class="guideTitle">step</strong>
+	<div class="guidebox">
+		<div class="stepList">
+			<ul>
+				<li class="finish"><span>1</span><strong>보험료 결제방법 선택</strong></li>
+				<li class="active"><span>2</span><strong>확인 및 인증</strong></li>
+				<li><span>3</span><strong>결과확인</strong></li>
+				<li><span>4</span><strong>완료</strong></li>
+			</ul>
+		</div>
+	</div>
+	<div class="guidebox">
+		<div class="stepList">
+			<ul>
+				<li class="finish"><span>1</span><strong>일시중지 해지신청</strong></li>
+				<li class="active"><span>2</span><strong>일시중지 해지신청 확인 및 인증</strong></li>
+				<li><span>3</span><strong>일시중지 해지 결과확인</strong></li>
+			</ul>
+		</div>
+	</div>
+
+	<strong class="guideTitle">popup</strong>
+	<div class="guidebox">
+		<button type="button" class="uiLayerpop" data-dialogid="dialog2">popup_button</button>
+		<a href="#dialog3" class="uiLayerpop" data-dialogid="dialog3">popup_a</a>
+
+		<section id="dialog1" class="uiDialog" role="dialog"><!-- 자동팝업 -->
+			<div class="styleBase">
+				<h1>노을</h1>
+				<p>바람이 머물다 간 들판에 모락모락 피어나는 저녁 연기 <br> 
+				색동옷 갈아입은 가을 언덕에 빨갛게 노을이 타고있어요 <br> 
+				허수아비 팔 벌려 웃음 짓고 초가지붕 둥근 박 꿈꿀때 <br> 
+				고개숙인 논 밭의 열매 노랗게 익어만가는 <br> 
+				가을바람 머물다 간 들판에 모락모락 피어나는 저녁 연기 <br> 
+				색동옷 갈아입은 가을 언덕에 붉게 물들어 타는 저녁 놀</p>
+				<button type="button" class="uiPopClose">닫기</button>
+				<div class="uiCookieWrap">
+					<input type="checkbox" id="oneDay" value="1">
+					<label for="oneDay">하루만 보기</label>
+					<button type="button" data-cookieid="oneDay">설정 후 닫기</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="dialog2" class="uiDialog" role="dialog">
+		<div class="styleBase">
+			<h1 id="dialog2_label">Lay Me Down</h1><br>
+			<p>
+			Yes, I do, I believe<br>
+			That one day I will be<br>
+			Where I was right there<br>
+			Right next to you<br><br>
+			</p>
+			<p>
+			And its hard<br>
+			The days just seems so dark<br>
+			The moon, the stars<br>
+			Are nothing without you<br><br>
+			</p>
+			<p>
+			Your touch, your skin<br>
+			Where do I begin?<br>
+			No words can explain<br>
+			The way Im missing you<br><br>
+			</p>
+			<p>
+			Deny this emptiness<br>
+			This hole that Im inside<br>
+			These tears<br>
+			They tell their own story<br><br>
+			</p>
+			<p>
+			Told me not to cry when you were gone<br>
+			But the feelings overwhelming, its much too strong<br><br>
+			</p>
+			<p>
+			Can I lay by your side?<br>
+			Next to you, you<br>
+			And make sure youre alright<br>
+			Ill take care of you<br>
+			I dont want to be here if I cant be with you tonight<br><br>
+			</p>
+			<p>
+			Im reaching out to you<br>
+			Can you hear my call?<br>
+			This hurt that Ive been through<br>
+			Im missing you, missing you like crazy<br><br>
+			</p>
+			<p>
+			You told me not to cry when you were gone<br>
+			But the feelings overwhelming its much too strong<br><br>
+			</p>
+			<p>
+			Can I lay by your side?<br>
+			Next to you, you<br>
+			And make sure youre alright<br>
+			Ill take care of you<br>
+			I dont want to be here if I cant be with you tonight<br>
+			</p>
+			<p>
+			Lay me down tonight<br>
+			Lay me by your side<br>
+			Lay me down tonight<br>
+			Lay me by your side<br>
+			Can I lay by your side?<br>
+			Next to you<br>
+			You <br><br>
+			</p>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>
+	</section>
+
+	<section id="dialog3" class="uiDialog" role="dialog">
+		<div class="styleBase">
+			<h1>따끔</h1><br>
+			<p>너 하나쯤 없다고 괜찮을 줄 알았어<br> 
+			맨날 끼던 반지를 잃어버린 느낌처럼<br> 
+			다른 사람을 만나다 이상하게 너를 불렀어<br> 
+			정말 모두 잊은 줄 알았는데<br><br>
+			</p>
+			<p>
+			YOU~~~ woo~ woo~ woo~ <br> 
+			도대체 네가 뭐라고 아직까지도 너만 가득하잖아<br> <br>
+			</p>
+			<p>
+			가끔 눈이 따끔거릴 때 바람이 분 것 뿐인데<br> 
+			네가 부는 것 같아 눈물이 나<br> 
+			이렇게 맘이 따끔거릴 때 그때야 알게 됐어<br><br> 
+			</p>
+			<p>
+			아직도 좋은 너란 걸<br> 너 하나쯤 없다고 괜찮을 줄 알았어<br> 
+			맨날 끼던 반지를 잃어버린 느낌처럼<br> 
+			다른 사람을 만나다 이상하게 너를 불렀어<br>
+			정말 모두 잊은 줄 알았는데<br> <br> </p>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>
+	</section>
+
+
+		<!--
+			+자동팝업
+			$('#dialog1').uiDialog({ auto : true });
+
+			+이벤트 없이 띄우기
+			$('#dialog3').uiDialog({ call : 'show', call_back : '#test' });
+			+이벤트 없이 닫기
+			$('#dialog3').uiDialog({ call : 'hide', call_back : '#test' });
+		-->
+	</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/common.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script>
+	$('.uiDrop').uiDropdowns();
+	$('.uiTab').uiTab();
+	$('.uiAcco').uiAccordion();
+	$('.uiLayerpop').uiDialog();
+	$('#dialog1').uiDialog({ auto : true });
+	$('.uiTooltip').uiTooltip();
+  </script>
+ </body>
+</html>

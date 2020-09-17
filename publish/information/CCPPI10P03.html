@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 휴대폰번호 변경 - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>휴대폰번호 변경</h1>			
+			<section class="container">
+				<!-- 휴대폰 변경 -->
+				<div class="infoBox">
+					<p class="listHyphen">
+						현재 번호와 변경하실 번호를 입력하신 후 확인버튼을 누르시면 휴대폰 번호가 변경됩니다.
+					</p>
+				</div>				
+				<div class="formWrap">
+					<!-- 기존 데이터가 없는 경우 현재 전화번호 노출 안됨 -->
+					<div class="inputBox">
+						<strong  class="labelType">현재 전화번호</strong>
+						010<span class="numBox"><input type="text" id="cNum" title="현재 전화번호 중간자리"></span>1234
+					</div>
+					<div class="inputBox">
+						<label for="chgNum">변경하실 전화번호</label>
+						<div class="phoneBox">
+							<span>
+							<select class="uiSelect" id="chgNum" title="식별번호">
+								<option>선택</option>
+							</select>
+							</span>
+							<span><input type="text" title="변경하실 전화번호 중간자리"></span>
+							<span><input type="text" title="변경하실 전화번호 끝자리"></span>
+						</div>
+					</div>					
+				</div>
+				
+				<!-- 휴대폰 삭제 -->
+				<div class="infoBox">
+					<ul class="listHyphen">
+						<li>현재 번호를 입력하신 후 확인버튼을 누르시면 휴대폰 번호가 삭제됩니다.</li>
+						<li>휴대폰번호 삭제시 문자안내 서비스는 제공되지 않습니다.</li>
+					</ul>
+				</div>
+				<div class="formWrap">
+					<div class="inputBox">
+						<label for="cNum">현재 전화번호</label>
+						010<span class="numBox"><input type="text" id="cNum" title="전화번호 가운데자리"></span>1234
+					</div>		
+				</div>
+								
+				<div class="btnWrap">					
+					<a href="#none" class="btnCont">확인</a> 
+				</div>				
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>		
+	</body>
+</html>

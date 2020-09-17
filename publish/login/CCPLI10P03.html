@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 휴대폰 인증 - 메트라이프생명</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>휴대폰 인증</h1>			
+			<section class="container">				
+				<div class="authCont">
+					<div class="authForm">
+						<span class="title">통신사 선택</span>
+						<input type="radio" name="radio1" id="skt"><label for="skt">SKT</label>
+						<input type="radio" name="radio1" id="kt"><label for="kt">KT</label>
+						<input type="radio" name="radio1" id="lgt"><label for="lgt">LGT</label>
+						<span>
+							<input type="radio" name="radio1" id="other"><label for="other">알뜰폰</label>
+							<select class="uiSelect" title="통신사">
+								<option>선택</option>
+							</select>
+						</span>							
+					</div>
+					<div class="authForm">
+						<label for="mbNum" class="title">휴대폰번호</label>
+						<input type="text" id="mbNum" placeholder="- 제외하고 숫자만 입력">
+					</div>
+					<div class="authForm">
+						<label for="name" class="title">이름</label>
+						<input type="text" id="name">
+					</div>
+					<div class="authForm">
+						<label for="birth" class="title">생년월일</label>
+						<input type="text" id="birth" placeholder="예 : 900101">
+					</div>
+					<div class="authForm">
+						<span class="title">성별</span>
+						<span>
+							<input type="radio" name="gender" id="man"><label for="man">남</label>
+							<input type="radio" name="gender" id="woman"><label for="woman">여</label>
+							<select class="uiSelect" title="">
+								<option>내국인</option>
+								<option>외국인</option>
+							</select>
+						</span>
+					</div>
+					<div class="authForm">
+						<div class="agrChk">
+							<p>
+								<input type="checkbox" name="check_group_name" id="check_1_1"><label for="check_1_1">개인정보 이용 동의</label>
+								<a href="#none" class="btnLine" target="_blank">전문보기</a>
+							</p>
+							<p><input type="checkbox" name="check_group_name" id="check_1_2"><label for="check_1_2">고유식별정보 처리 동의</label>
+								<a href="#none" class="btnLine" target="_blank">전문보기</a>
+							</p>
+							<p><input type="checkbox" name="check_group_name" id="check_1_3"><label for="check_1_3">통신사 이용약관 동의</label>
+								<a href="#none" class="btnLine" target="_blank">전문보기</a>
+							</p>
+							<p><input type="checkbox" name="check_group_name" id="check_1_4"><label for="check_1_4">서비스 이용약관 동의</label>
+								<a href="#none" class="btnLine" target="_blank">전문보기</a>
+							</p>											
+							<input type="checkbox" id="check_all" data-all-check="check_group_name"><label for="check_all"><strong>위 약관에 전체 동의합니다.</strong></label>
+						</div>
+					</div>
+					<div class="authForm">
+						<button type="button" class="btnWht">인증번호발송</button>
+					</div>
+				</div>
+				<div class="authCont sub">
+					<div class="authForm">
+						<label for="authNum" class="title">인증번호 입력</label>
+						<p>
+							<input type="text" id="authNum">
+							<button type="button" class="btnCont">인증번호 확인</button>
+						</p>
+						<span class="authTime">입력시간 02 : 59</span>
+					</div>
+					<ul class="listDot">
+						<li>3분 이내에 인증번호(6자리)를 입력하셔야 합니다.</li>
+						<li>입력시간 초과 시 "인증번호 재발송" 버튼을 눌러주시기 바랍니다.</li>
+						<li>휴대폰인증 5회 오류시 콜센터(1588-9600)로 문의 주시기 바랍니다.</li>
+					</ul>
+				</div>
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>		
+	</body>
+</html>

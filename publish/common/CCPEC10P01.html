@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 보안메일 비밀번호 입력 - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<div class="popHeader"><img src="../../images/logo_metlife.png" alt="MetLife"></div>
+			<section class="container">
+				<div class="emPsInfo">
+					<h1>메일 확인 비밀번호 입력</h1>
+					<p class="txtPara">이 메일은 암호화된 보안메일입니다.<br>
+					메일을 확인하시려면 아래의 계약자정보를 입력하여 주시기 바랍니다.</p>
+				</div>
+				<div class="emPsBox">
+					개인 : 주민등록기준 생년월일 6자리<br>
+					법인 : 사업자등록번호 뒷4자리
+				</div>
+				<div class="formWrap">
+					<div class="inputBox">
+						<label for="Pw">메일확인 비밀번호</label>
+						<input type="password" id="Pw" >
+					</div>
+				</div>
+				<div class="btnWrap">
+					<a href="#none" class="btnCont">확인</a>
+					<a href="#none" class="btnLine">취소</a>
+				</div>
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>
+	</body>
+</html>

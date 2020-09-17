@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 이메일 변경 - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>이메일 변경</h1>			
+			<section class="container">				
+				<!-- 이메일 변경 -->
+				<div class="infoBox">
+					<p class="listHyphen">
+						현재 이메일과 변경하실 이메일을 입력하신 후 확인버튼을 누르시면 이메일이 변경됩니다.
+					</p>
+				</div>				
+				<div class="formWrap">
+					<div class="inputBox">
+						<strong class="labelType">현재 이메일</strong>		
+						<div class="emBox">
+							<span><input type="text" title="현재 이메일 아이디"></span>
+							@naver.com
+						</div>		
+					</div>
+					<div class="inputBox">
+						<label for="mail">변경하실 이메일</label>
+						<div class="emailBox">
+							<div class="emBox">
+								<span><input type="text" id="mail" title="변경하실 이메일 아이디"></span>
+								<span><input type="text" title="변경하실 이메일 도메인"></span>
+							</div>
+							<select class="uiSelect" title="이메일도메인">
+								<option>직접입력</option>
+								<option>metlife.com</option>
+								<option>dreamwiz.com</option>
+							</select>
+						</div>
+					</div>					
+				</div>
+				<!-- 이메일 삭제 -->
+				<div class="infoBox">
+					<p class="listHyphen">
+						현재 이메일을 입력하신 후 확인버튼을 누르시면 이메일이 삭제됩니다.
+					</p>
+				</div>				
+				<div class="formWrap">
+					<div class="inputBox">
+						<strong class="labelType">현재 이메일</strong>		
+						<div class="emBox">
+							<span><input type="text" title="이메일 아이디"></span>
+							<span>@naver.com</span>							
+						</div>		
+					</div>									
+				</div>
+					
+				<div class="btnWrap">					
+					<a href="#none" class="btnCont">확인</a> 
+				</div>				
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>		
+	</body>
+</html>

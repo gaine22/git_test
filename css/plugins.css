@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+a {-webkit-tap-highlight-color:transparent}
+button, label{cursor:pointer}
+
+/* uiSlide - base */
+.uiSlide{position:relative; overflow:hidden; width:100%;}
+.uiSlide .ui_item_wrapper{position:relative; overflow:hidden; width:100%; height:auto;}
+.uiSlide .ui_item_group{position:absolute; top:0; left:0; width:100%; height:100%;}
+.uiSlide .ui_item {position:absolute; top:0; left:0; width:100%; height:auto; opacity:0; box-sizing:border-box;}
+.uiSlide.slide_ready .ui_item{display:none; opacity:1}
+.uiSlide.slide_ready .ui_item.slide_on{display:block; z-index:2}
+.uiSlide .nav_wrapper button{position:absolute; z-index:3; width:50px; height:50px; margin-top:-25px; overflow:hidden; color:transparent; background:transparent}
+.uiSlide .nav_wrapper button:after{content:""; position:absolute; top:0; left:0; display:block; width:50px; height:50px; font-size:30px; background:rgba(256,256,256,0.7); color:#000}
+.uiSlide .nav_wrapper .prev{top:50%; left:0}
+.uiSlide .nav_wrapper .prev:after{content:"←";}
+.uiSlide .nav_wrapper .next{top:50%; right:0}
+.uiSlide .nav_wrapper .next:after{content:"→";}
+.uiSlide .nav_wrapper button.nav_end{opacity:0.5}
+.uiSlide .dot_wrapper{position:absolute; z-index:3; width:100%; text-align:center;}
+.uiSlide .dot_wrapper .btn_auto,
+.uiSlide .dot_wrapper .dot_div{display:inline-block; vertical-align:top}
+.uiSlide .dot_wrapper .dot_div button{display:inline-block; vertical-align:top; overflow:hidden; margin:0 3px; width:10px; height:10px; border-radius:5px; border:2px solid #ccc; color:transparent;}
+.uiSlide .dot_wrapper .btn_auto span{display:inline-block; width:100%; height:100%}
+.uiSlide .dot_wrapper button.on{width:10px; height:10px; background:#0061a0; border:0; border-radius:5px;}
+.uiSlide .btn_auto.type_b{position:absolute; z-index:3}
+.uiSlide h1{position:absolute; top:0; left:0; z-index:-1; color:transparent; font-size:xx-small;}
+
+/* uiSlide - style */
+.uiSlide .dot_wrapper{bottom:25px; left:0}
+.uiSlide .btn_auto{position:relative; overflow:hidden; color:transparent; width:10px; height:10px; margin:0 3px; }
+.uiSlide .btn_auto:after{content:""; display:block; position:absolute; top:0; left:0; width:100%; height:100%; z-index:1; font-size:12px; color:#fff; background:url(../images/btn_slide.png) no-repeat; box-sizing:border-box;}
+.uiSlide .ico_play:after{background-position:0 0;}
+.uiSlide .ico_stop:after{background-position:-20px 0;}
+.ex_div .uiSlide .ui_item{height:350px}
+
+/* radio checkbox */
+input[type="radio"].ui_form,
+input[type="checkbox"].ui_form{position:absolute; opacity:0; z-index:-1; /*-webkit-appearance:none; -moz-appearance:none;appearance:none;*/}
+
+label.uiRadio{position:relative; display:inline-block; box-sizing:border-box; margin-right:16px; min-height:21px;}
+label.uiRadio:before{content:""; display:inline-block; vertical-align:middle; margin-right:5px; background:url(../images/bg_form.png) no-repeat 0 0; width:21px; height:21px; background-size:100px auto;}
+/*label.uiRadio:hover:before{background-position:-50px 0}*/
+label.uiRadio.checked:before{background-position:-25px 0}
+label.uiRadio.disabled:before{opacity:0.4}
+
+.s12 label.uiRadio:before {vertical-align:top;}
+.ios label.uiRadio {line-height:21px;}
+
+label.uiCheckbox{position:relative; display:inline-block; box-sizing:border-box; margin-right:5px;}
+label.uiCheckbox:before{content:""; display:inline-block; vertical-align:top; margin-right:5px; background:url(../images/bg_form.png) no-repeat 0 -25px; width:21px; height:21px; background-size:100px auto;}
+/*label.uiCheckbox:hover:before{background-position:-50px -40px}*/
+label.uiCheckbox.checked:before{background-position:-25px -25px;}
+label.uiCheckbox.disabled:before{opacity:0.4}
+label.focus{text-decoration:underline;}
+
+table label.uiRadio {margin:0;}
+
+label.switchBtn { width:100px; height:38px; background:#fff; border:1px solid #d7d7d7; border-radius:18px; margin-right:0; }
+label.switchBtn.checked { background:#007abc; border:1px solid #007abc; }
+label.switchBtn:after { content:''; display:block; position:absolute; top:0; left:1px; width:51px; height:36px; background:#fff; border-radius:17px; box-shadow:0 0 5px rgba(0,0,0,0.3); }
+label.switchBtn:before { position:absolute; top:12px; left:60px; width:25px; height:13px; background:url(../images/bg_switchbtn.png) no-repeat 0 0; background-size:25px auto;  }
+label.switchBtn.checked:before { background-position:0 -20px; left:17px; }
+label.switchBtn.checked:after { left:47px; }
+
+/* select ui */
+.uiSelect {display:inline-block; position:relative; vertical-align:top; width:270px; height:32px; padding:0 25px 0 8px; border-radius:2px; background:#fff url(../images/ico_select.png) no-repeat 100% 6px; background-size:25px auto; border:1px solid #333; cursor:pointer;}
+.uiSelect optgroup,
+.uiSelect option {font-style:normal; background-color:#fff;}
+.uiSelect:disabled {background-color:#fafafa; border-color:#e1e1e1; }
+
+.s34 .uiSelect.sizeS {width:100px;}
+.s12 .uiSelect {padding-left:10px;}
+	
+/* layerpopup z-index : 1000 */
+.uiDialog {display:none; position:fixed; z-index:1001; background:#fff; box-shadow:0 0 5px rgba(0,0,0,0.2); opacity:0; padding:0;}
+.uiDialog .dialogBase {position:relative; padding:27px 30px 30px 30px; box-sizing:border-box;}
+.uiDialog .uiPopClose, 
+.popWrap .uiPopClose {position:absolute; top:27px; right:30px; padding-left:24px; background:url(../images/pop_close.png) no-repeat 0 4px; background-size:15px 15px;}
+
+.bg_dialog {display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:1000; background:#000; opacity:0;}
+.uiDialog h1 {font-size:16px; font-weight:bold; border-bottom:2px solid #333; padding-bottom:24px;}
+
+.uiDialog .uiCookieWrap {background:#f2f2f2; padding:20px 30px; margin:30px -30px -30px -30px;}
+
+.uiDialog .baseCont {width:400px; line-height:21px; padding-top:20px}
+.s12 .uiDialog .baseCont {width:auto; padding:30px 20px;}
+
+.s12 .uiDialog {width:95%;}
+.s12 .uiDialog .dialogBase {padding:0;}
+.s12 .uiDialog h1 {padding:25px 82px 23px 20px;}
+.s12 .uiDialog .uiPopClose {top:24px; right:20px;}
+.s12 .popWrap .uiPopClose, .s12 .uiDialog .uiPopClose { min-height:16px; background-position:0 1px;}
+
+/* tab */
+.uiTab {position:relative;}
+.uiTab:after {content:""; display:block; clear:both;}
+.uiTab .tabBtns {display:table; width:100%; box-sizing:border-box; border:1px solid #0061a0; border-radius:5px; vertical-align:top;}
+/*.uiTab .tabBtns:after{content:""; display:block; position:absolute; bottom:0; left:0; z-index:0; width:100%; height:1px; border-bottom:1px solid #ccc;}*/
+.uiTab .uiBtn {display:table-cell; width:33%; text-align:center; padding:10px 20px 13px; border-left:1px solid #0061a0; color:#0061a0; font-weight:bold; position:relative; z-index:1; box-sizing:border-box;}
+.uiTab .uiBtn:first-child {width:34%; border-left:0}
+.uiTab .uiBtn.selected {background:#0061a0; color:#fff;}
+.uiTab .tabPanels {width:100%; box-sizing:border-box; margin-top:20px;}
+.uiTab .uiPanel {box-sizing:border-box; position:relative;} 
+.uiTab .uiPanel,
+.uiTab .uiPanel[aria-hidden='true'] {display:none;}
+.uiTab .uiPanel[aria-hidden='false'] {display:block;}
+.uiTab .uiPanel .panel_tit {overflow:hidden; position:absolute; top:0; left:0; font-size:xx-small; color:transparent;}
+
+.s12 .uiTab .uiBtn {width:25%; padding:8px 10px 9px 10px}
+.s12 .uiTab .uiBtn span {display:none;}
+
+/* accordion */
+.uiAcco {position:relative; line-height:21px; border-top:2px solid #333;}
+.uiAcco .accoWrap { border-bottom:1px solid #e1e1e1; }
+.uiAcco .acBtnWrap{position:relative;}
+.uiAcco .accoWrap.selected{border-bottom:0; background:#f6fafc;}
+.uiAcco .acBtnWrap:first-child{margin-top:0;}
+.uiAcco .acBtnWrap .accoTit{display:inline-block; padding:12px 50px 13px 10px; font-weight:normal; color:#2c77c5;}
+.accoBase .accoBtn{position:absolute; top:0; right:0; display:block; width:100%; height:100%; box-sizing:border-box; color:transparent}
+.accoBase .accoBtn:after {content:""; display:block; position:absolute; top:16px; right:12px; width:12px; height:12px; background:url(../images/ico_acco.png) no-repeat; background-size:25px auto;}
+.uiAcco .accoWrap.selected .accoBtn:after {background-position:-12px 0;}
+.uiAcco .accoPnl{display:none; position:relative; background:#fff; border:1px solid #0061a0; padding:16px 10px 35px 10px; box-sizing:border-box;}
+.uiAcco .accoPnl:after {position:absolute; content:""; top:-1px; left:50%; margin-left:-8px; width:16px; height:9px; background:url(../images/ico_acco.png) no-repeat 0 bottom;}
+
+.s12 .uiAcco .acBtnWrap .accoTit {font-size:15px; line-height:21px; padding-left:20px;}
+.s12 .accoBase .accoBtn:after {right:20px;}
+.s12 .uiAcco .accoPnl {padding:22px 20px 20px 20px;}
+
+/* input form */
+.formWrap {border-top:2px solid #333; padding:8px 0 0 154px;}
+.formWrap [class^="input"] {position:relative; padding-left:188px; margin-top:12px;}
+.formWrap .inputBox:after {content:""; display:block; clear:both;}
+.s34 .formWrap [class^="input"] > label, .s34 .formWrap [class^="input"] > .labelType {line-height:30px; position:absolute; top:0; left:0; font-weight:normal;}
+/*.formWrap [class^="input"] > .labelType {line-height:24px; font-weight:normal; position:absolute; top:50%; left:0; margin-top:-13px;}*/
+.s34 .formWrap input[type=text], .s34 .formWrap input[type=password], .s34 .formWrap select, .resConts .formWrap {width:284px; /*vertical-align:top;*/}
+.s34 .formWrap .etc input[type=text] {width:160px}
+.formWrap .helpTxt {display:inline-block; font-size:13px; color:#666; line-height:20px; background:url(../images/bul_list_imp.png) no-repeat 0 5px; padding-left:15px; background-size:10px auto;}
+.formWrap .helpTxtN {display:inline-block; font-size:13px; color:#666;}
+.formWrap > .other {margin-top:20px;}
+.formWrap .addBox {margin-top:10px;}
+
+.s34 .formWrap .valTxt {display:inline-block; width:263px; }
+.s34 .formWrap .valTxt.wLn {width:515px;}
+.formWrap .valTxt.price {text-align:right;}
+.formWrap .valTxt {border:1px solid #e1e1e1; background:#fafafa; min-height:21px; border-radius:2px; line-height:21px; padding:4px 10px 5px 10px;}
+.s34 .formWrap .valTxt.adrTxt {width:376px;}
+.formWrap .inpTxt, .formWrap .inpChr { padding:5px 0; }
+.formWrap .inpChr label {margin:0 25px 10px 0;}
+.formWrap .inpChr {margin-bottom:-10px;}
+.s12 .formWrap .inpChr {padding:0; margin-top:0;}
+/*.s12 .formWrap .inpChr label {margin-top:10px;}*/
+.s34 .formWrap.plusFrm .inpChr {width:590px;}
+.ios .formWrap .valTxt {padding:5px 10px 4px 10px;}
+/*
+.s12 .formWrap.plusFrm .inpChr {margin-top:-10px; padding-bottom:10px;}
+.s12 .formWrap.plusFrm .inpChr label {margin-bottom:0;}
+*/
+.s12 .formWrap .etc span {display:block; margin-top:10px;}
+.s12 .formWrap .etc input[type=text] {width:60%;}
+
+.s34 .formWrap textarea {width:536px;}
+.s34 .popWrap .formWrap textarea {width:100%;}
+.formWrap .bytes {display:block; font-size:13px; margin-top:7px;}
+
+.s12 .formWrap .alignR {text-align:right; margin-top:10px;}
+
+.s34 .formWrap .helpTxt, .s34 .formWrap .helpTxtN {margin-left:25px;}
+.s12 .formWrap .helpTxt, .s12 .formWrap .helpTxtN {margin-top:7px;}
+
+.formWrap .helpTxt.block {clear:left; display:block; margin:10px 0 0 0;}
+.s34 .formWrap .helpTxt.block {max-width:540px;}
+.s34 .formWrap .helpTxt.info {clear:left; display:block; margin:0; min-height:27px; padding-top:5px; background-position:0 10px;}
+.s12 .formWrap .helpTxt.info {margin:0;}
+
+.s12 .formWrap {padding:0 10px;}
+.s12 .popWrap .formWrap {padding:0 10px; margin-top:20px;}
+/*.s12 .hWrap + .formWrap {margin-top:7px;}*/
+.s12 .formWrap [class^="input"] {padding:0; margin-top:18px;}
+.s12 .formWrap [class^="input"] > label, .s12 .formWrap [class^="input"] > .labelType {display:block; line-height:21px; padding-bottom:10px; margin:0;}
+.s12 .formWrap input[type=text], .s12 .formWrap input[type=password], .s12 .formWrap select, .resConts .s12 .formWrap {width:100%; /*width:calc(100% - 56px); width:-webkit-calc(100% - 56px); width:-moz-calc(100% - 56px);*/}
+
+.s12 .formWrap .half span { float:left; display:block; width:50%; box-sizing:border-box; padding-right:5px;  } 
+.s12 .formWrap .half span:nth-child(2) { padding:0 0 0 5px; }
+.s12 .formWrap .half:after { content:''; display:block; clear:both; }
+.s12 .formWrap .certTime { display:block; margin-top:15px; }
+
+.popWrap .formWrap { border:0; padding:0 0 0 20px; margin:30px 0 0 0;  }
+.popWrap .formWrap input[type="text"],
+.popWrap .formWrap .uiSelect { width:100%; }
+
+.popWrap .formWrap .numBox { position:relative; display:inline-block; width:78px; margin:0 20px; vertical-align:middle; }
+.popWrap .formWrap .numBox:after,
+.popWrap .formWrap .numBox:before { content:''; position:absolute; display:block; top:16px; left:-12px; width:5px; height:1px; background:#000; }
+.popWrap .formWrap .numBox:after { left:initial; right:-12px; }
+
+.phoneBox { display:table;}
+.win .formWrap .phoneBox {width:284px;} 
+.formWrap .phoneBox .uiSelect, .formWrap .phoneBox input[type=text] { width:100%; }
+.phoneBox span {position:relative; display:table-cell; width:35%; box-sizing:border-box; padding-left:24px; vertical-align:middle; }
+.phoneBox span:before { content:''; position:absolute; display:block; top:16px; left:8px; width:6px; height:1px; background:#000;  }
+.phoneBox span:first-child {width:30%; padding:0;}
+.phoneBox span:first-child:before { display:none; }
+
+.phoneBox.sms {position:relative; }
+.s34 .phoneBox.sms span:last-child {position:absolute; top:0; right:-97px; width:auto; padding-left:5px;}
+.phoneBox.sms span:last-child:before {display:none;}
+
+.s12 .phoneBox {width:100%; }
+
+.s12 .phoneBox.sms {display:block; overflow:hidden; width:auto; padding:42px 103px 0 0;}
+.s12 .phoneBox.sms span {display:block; float:left; width:55%; box-sizing:border-box;}
+.s12 .phoneBox.sms span:first-child {position:absolute; top:0; left:0; right:0; width:100%;}
+.s12 .phoneBox.sms span:nth-child(2) {padding:0; width:45%;}
+.s12 .phoneBox.sms span:nth-child(2):before {display:none;}
+.s12 .phoneBox.sms span:last-child {width:auto; position:absolute; right:0; bottom:0;}
+
+.formWrap.emailFormBox {padding:0;}
+.formWrap.emailFormBox > div { padding-left:80px; }
+.s34 .popWrap .formWrap.emailFormBox .emailBox {width:auto; margin:0; padding-right:130px;}
+.s34 .formWrap.emailFormBox .emailBox .uiSelect {right:0; width:120px;}
+
+.formWrap .emBox {display:table; width:100%; line-height:32px;}
+.formWrap .emBox span { position:relative; display:table-cell; width:50%; box-sizing:border-box; padding-left:12px; vertical-align:middle; }
+.formWrap .emBox span:first-child {padding:0 12px 0 0; }
+.formWrap .emBox input[type=text] {width:100%; vertical-align:top;}
+.s34 .formWrap .inputBox > .emBox span {width:auto; padding-left:0;}
+.s34 .formWrap .inputBox > .emBox span:first-child, .s34 .formWrap .inputBox > .emBox span:first-child input[type=text] {width:130px;}
+.s34 .formWrap .emailBox .uiSelect {position:absolute; top:0; right:-145px; width:135px; }
+.win .formWrap .emailBox {position:relative; width:284px; }
+.formWrap .emailBox .emBox > span:first-child:after { content:'@'; display:block; position:absolute; top:0; right:-6px;   }
+
+.s34 .popWrap .inputBox > .emBox {margin-left:-50px;}
+.s34 .popWrap .inputBox > .emailBox {margin-left:-50px; width:235px;}
+
+.s12 .emailBox .emBox { margin-bottom:10px; width:100%; }
+
+/* 사고보험금 form */
+.s34 .formWrap.plusFrm {padding-left:64px;}
+.formWrap.plusFrm [class^="input"] > label, .formWrap.plusFrm [class^="input"] > .labelType {padding-left:14px;}
+.formWrap.plusFrm [class^="input"] > label.blHyp:after, .formWrap.plusFrm [class^="input"] > .labelType.blHyp:after {content:""; position:absolute; top:16px; left:1px; width:4px; height:1px; background:#333;}
+.s12 .formWrap.plusFrm [class^="input"] > label.blHyp:after, .s12 .formWrap.plusFrm [class^="input"] > .labelType.blHyp:after {top:10px;}
+.ios .formWrap.plusFrm [class^="input"] > label.blHyp:after, .ios .formWrap.plusFrm [class^="input"] > .labelType.blHyp:after {top:8px;}
+.formWrap.plusFrm [class^="input"] > label.blDot:after, .formWrap.plusFrm [class^="input"] > .labelType.blDot:after {content:""; position:absolute; top:14px; left:1px; width:3px; height:3px; background:url(../images/bg_dot.png) no-repeat; background-size:3px 3px;}
+.s12 .formWrap.plusFrm [class^="input"] > label.blDot:after, .s12 .formWrap.plusFrm [class^="input"] > .labelType.blDot:after {top:9px;}
+.ios .formWrap.plusFrm [class^="input"] > label.blDot:after, .ios .formWrap.plusFrm [class^="input"] > .labelType.blDot:after {top:7px;}
+.s12 .formWrap.plusFrm [class^="input"] > .labelType.blN, .s12 .formWrap.plusFrm [class^="input"] > label.blN {padding-left:0;}
+.formWrap.plusFrm h3 {font-size:16px; font-weight:bold; margin:30px 0 -4px 0}
+.formWrap.plusFrm h3:first-child {margin-top:10px;}
+.formWrap.plusFrm h3 span {display:inline-block; font-size:13px; color:#666; font-weight:normal; margin-left:3px;}
+.s12 .formWrap.plusFrm h3 {margin-top:20px;}
+.s34 .inputBoxTg {margin-top:20px;}
+
+.s34 .formWrap.plusFrm .btnWht, .s34 .formWrap.plusFrm .btnContG {width:60px; text-align:center; padding-left:0; padding-right:0;}
+
+.plusFrm .frmResult > span {position:relative; display:block; border:1px solid #e1e1e1; background:#fafafa; border-radius:2px; line-height:21px; margin:10px 0 0 0; padding:4px 30px 5px 10px;}
+.s34 .plusFrm .frmResult {margin-bottom:-12px;}
+.s34 .plusFrm .frmResult > span {display:inline-block; width:242px; margin:0 6px 12px 0;}
+.plusFrm .inputBox > .txtPara {padding-top:10px;}
+.s12 .plusFrm .inputBox > .txtPara {padding:10px 0 0 0}
+.win .frmResult.quad {width:590px;}
+.s34 .frmResult.quad > span {width:95px;} 
+.s12 .frmResult.quad {overflow:hidden;}
+.s12 .frmResult.quad > span {float:left; width:calc(50% - 5px); width:-webkit-calc(50% - 5px); width:-moz-calc(50% - 5px); box-sizing:border-box;}
+.s12 .frmResult.quad > span:nth-child(2) {margin-top:0;}
+.s12 .frmResult.quad > span:nth-child(odd) {margin-right:10px;} 
+.s12 .plusFrm .frmResult > span:first-child {margin-top:0;}
+
+.plusFrm .btnDel {overflow:hidden; position:absolute; top:7px; right:7px; width:15px; height:15px; font-size:3px; color:#fafafa;}
+.plusFrm .btnDel:after {position:absolute; content:""; width:15px; height:15px; top:0; left:0; right:0; bottom:0; background:url(../images/btn_del.png) no-repeat; background-size:15px 15px}
+.formWrap.plusFrm .valTxt {position:relative; padding-right:30px; margin-bottom:10px;}
+.s34 .formWrap.plusFrm .valTxt {width:536px; }
+.s34 .formWrap.plusFrm .valTxt > span {display:inline-block; padding-right:15px;}
+.s34 .formWrap.plusFrm .inpSelGrp, .s34 .formWrap.plusFrm .psBtn, .s34 .formWrap.plusFrm .inputBox .halfBox {float:left; margin-right:10px;}
+.s34 .formWrap.plusFrm .psBtn input.sizeL {width:438px;}
+.s34 .formWrap.plusFrm .psBtn .uiSelect.sizeL {width:508px; margin:0 5px 0 0;}
+.s34 .formWrap.plusFrm .inputBox .halfBox {width:508px;}
+
+.s34 .formWrap .gradeGp {overflow:hidden; position:relative; padding-right:70px; width:516px; display:inline-block; margin:0 0 -10px -10px}
+.s34 .formWrap .gradeGp > .btnContG {position:absolute; right:0; bottom:11px;}
+.s34 .formWrap .gradeGp .psBtn {display:block; float:left; margin:0 0 10px 10px;}
+.formWrap .gradeGp .psBtn span:first-child {display:inline-block; width:31px;}
+.s34 .formWrap .gradeGp .psBtn input[type=text] {width:142px;}
+.s12 .formWrap .gradeGp .psBtn {margin-bottom:10px;}
+
+.s12 .formWrap.plusFrm .inputBox > .btnWht, .s12 .formWrap.plusFrm .inputBox > .btnContG {margin-top:10px;}
+.s12 .formWrap.plusFrm label.uiCheckbox {font-size:14px;}
+
+.formWrap.plusFrm.secGr {border-top:1px solid #e1e1e1; padding-top:15px; margin-top:30px;}
+.s12 .formWrap.plusFrm.secGr {margin-top:20px; padding-top:0;}
+
+.s34 .formWrap .fullBox select {width:578px;}
+.formWrap .fullBox:not(:last-child) {margin-bottom:10px;}
+
+/* 주민번호입력 */ 
+.formWrap .halfNum {display:table;}
+.win .formWrap .halfNum {float:left; width:284px; margin-right:10px;}
+.formWrap .halfNum span {display:table-cell; width:50%; box-sizing:border-box; padding-left:12px;}
+.formWrap .halfNum span:first-child {position:relative; padding:0 12px 0 0;}
+.formWrap .halfNum span:first-child:after {position:absolute; top:16px; right:-3px; content:""; width:6px; height:1px; background:#333;}
+.formWrap .halfNum.time span:first-child:after {position:absolute; top:5px; right:-4px; content:":"; background:none;}
+.formWrap .halfNum input[type=text], .formWrap .halfNum input[type=password], .formWrap .halfNum .uiSelect {width:100%}
+
+.s12 .formWrap .halfNum {width:100%;}
+.s12 .formWrap .inputJumin {position:relative; padding-right:72px;} 
+.s12 .formWrap .inputJumin .btnWht {position:absolute; top:31px; right:0}
+/*
+.s12 .formWrap .halfNum + .btnWht {margin-top:10px;}
+*/
+
+/* 사업자번호 입력 */
+.formWrap .bizNum {display:table;}
+.win .formWrap .bizNum {float:left; width:284px; margin-right:10px;}
+.formWrap .bizNum span {position:relative; display:table-cell; width:43%; box-sizing:border-box; padding-left:24px;}
+.formWrap .bizNum span:after {position:absolute; top:16px; left:9px; content:""; width:6px; height:1px; background:#333;}
+.formWrap .bizNum span.midN {width:30%}
+.formWrap .bizNum span:first-child {padding:0; width:27%}
+.formWrap .bizNum span:first-child:after {display:none;}
+.formWrap .bizNum input[type=text], .formWrap .bizNum input[type=password] {width:100%;}
+
+/* 50% 반나누기 */
+.win .inputBox .halfBox {display:inline-block; width:284px; vertical-align:middle;} 
+.win .inputBox .halfBox:after {content:""; display:block; clear:both;}
+.s34 .inputBox .halfBox span {float:left; width:52.5%; box-sizing:border-box; padding-left:5px; line-height:30px;}
+.s34 .inputBox .halfBox span:first-child {width:47.5%; padding:0 5px 0 0;}
+.s34 .inputBox .halfBox .uiSelect, .s34 .inputBox .halfBox input[type=text], .s34 .inputBox .halfBox input[type=password] {width:100%;}
+.s34 .inputBox .halfBox .valTxt {float:left; width:115px;}
+.s34 .inputBox .halfBox .valTxt:first-child {margin-right:10px;}
+.s12 .inputBox .halfBox .valTxt:last-child {margin-top:10px;}
+.s12 .inputBox .halfBox span:first-child {display:block; margin-bottom:10px;}
+.inputBox .listHyphen {margin-top:8px;}
+.win .inputBox .listHyphen {width:530px;}
+
+.s12  .inputBox .halfBox.sinTxt span {line-height:30px;}
+.s12  .inputBox .halfBox.sinTxt span:first-child {display:inline-block; width:47.5%; padding-right:5px; box-sizing:border-box; margin:0;}
+
+.s34 .psBtn {display:inline-block;}
+.s34 .psBtn a {margin-left:6px;} 
+.psBtn + .frmResult {clear:both; padding-top:12px;}
+
+.s12 .psBtn {display:table; width:100%;}
+.s12 .psBtn span {display:table-cell;}
+.s12 .psBtn span:last-child {padding-left:10px; box-sizing:border-box; vertical-align:top;}
+.s12 .psBtn span .btnWht {width:100%; vertical-align:top;}
+.s12 .psBtn .btnL {width:130px;}
+.s12 .psBtn .btnM{width:90px;}
+.s12 .psBtn .btnS {width:70px;}
+
+/* 년월일 select */
+.inpSelGrp {display:table;}
+.win .inpSelGrp {width:284px;} 
+.win .inpSelGrp.wLong {width:536px;}
+.inpSelGrp div {display:table-cell; width:33%; padding-left:10px; box-sizing:border-box;}
+.inpSelGrp div:first-child {width:34%; padding:0;}
+.formWrap .inpSelGrp .uiSelect {width:100%;}
+.inpSelGrp .valTxt {margin-top:12px;}
+.inpSelGrp .valTxt:first-child {margin-top:0}
+.s12 .inpSelGrp {width:100%;} 
+.s12 .inpSelGrp.wLong div {display:block; width:100%; padding:10px 0 0 0;}
+.s12 .inpSelGrp.wLong div:first-child {padding-top:0;}
+
+/* 주소입력 */
+.s34 .addrBox {overflow:hidden; width:536px; margin-top:12px;}
+.s34 .addrBox input[type=text] {width:242px; float:right;}
+.s34 .addrBox input[type=text]:first-child {float:left; width:284px;}
+
+.s12 .addrBox {margin-top:10px;}
+.s12 .addrBox input[type=text]:first-child {margin-bottom:10px;}
+
+/* loading z-index : 2000 
+.ui_loading{display:none; position:absolute; width:100%; height:100%; z-index:9000;}
+.loading_netive .loading_bg{position:absolute; top:0; left:0; z-index:9000; width:100%; height:100%; opacity:0.1; background:#000}
+.loading_netive .loading_img{opacity:0; overflow:hidden; position:absolute; top:50%; left:50%; width:30px; height:30px; margin:-15px 0 0 -15px; z-index:9001; background-image:url(/front2016/img/loading.png); background-size:cover}
+.loading_netive .loading_img span{position:absolulte; width:100%; height:100%; font-size:xx-small; color:transparent;}
+body > .ui_loading,
+body > .loading_netive .loading_bg
+body > .loading_netive .loading_img{position:fixed;}
+*/
+
+/* dropdowns */
+.uiDrop {position:relative;}
+.s34 .uiDrop .btnSelect {display:none;}
+.s12 .uiDrop .btnSelect {display:block; position:relative; z-index:1; height:39px; width:100%; font-weight:bold; padding:0 25px 0 10px; color:#333; border:1px solid #ccc; background:#fff; box-sizing:border-box; text-align:left; overflow:hidden;}
+.uiDrop .btnSelect:after {position:absolute; content:""; top:13px; right:10px; width:20px; height:12px; background:url(../images/ico_mtap.png) no-repeat; background-size:20px auto;}
+.uiDrop .btnSelect[aria-expanded="true"] {color:#0061a0;}
+.uiDrop .btnSelect[aria-expanded="true"]:after {top:12px; background-position:0 -15px;}
+.s12 .uiDrop .uiDropCont{display:none; position:absolute; top:38px; border:1px solid #ccc; background:#fff; box-sizing:border-box; z-index:100;}
+.s12 .uiDropCont li:not(:first-child) {border-top:1px solid #ccc;}
+.s12 .uiDropCont li > a {display:block; padding:9px 10px 11px 10px;}
+
+.s34 .tabWrap {margin:0 -30px 30px -30px;}
+.s34 .tabWrap ul {overflow:hidden; position:relative; padding-left:30px; }
+.s34 .tabWrap ul:after {position:absolute; content:""; bottom:0; right:0; left:0; display:block; height:1px; background:#ccc; z-index:1;}
+.s34 .tabWrap li {position:relative; float:left; margin-right:-1px; border:1px solid #ccc; border-bottom:0;}
+.s34 .tabWrap li > a {display:block; padding:9px 20px 12px 20px; color:#0061a0; font-weight:bold;}
+.s34 .tabWrap .on {border-top-width:3px; border-top-color:#0061a0; z-index:2; margin-bottom:-1px;}
+.s34 .tabWrap .on a {color:#333; background:#fff;}
+.s34 .tabWrap li a:hover {border-bottom-width:2px;}
+
+.s12 .tabWrap {margin:-25px -10px 20px -10px; padding:0 10px 30px 10px; background:#f2f2f2;}
+.s12 .tabWrap.uiDrop .uiDropCont {width:calc(100% - 20px); width:-webkit-calc(100% - 20px); width:-moz-calc(100% - 20px);}
+
+.s34 .tabWrap.gTabWrap { margin:0; }
+.s34 .tabWrap.gTabWrap ul:after {display:none;}
+.s34 .tabWrap.gTabWrap .uiDropCont { padding:1px 0 0 1px; }
+.s34 .tabWrap.gTabWrap .uiDropCont li {width:25%; box-sizing:border-box; border:0;  margin:-1px 0 0 -1px;}
+.s34 .tabWrap.gTabWrap .uiDropCont li a {height:48px; padding:9px 10px 0 10px; text-align:center; border:1px solid #ccc; }
+.s34 .tabWrap.gTabWrap .uiDropCont li.on a { border:1px solid #0061a0;}
+
+.s12 .tabWrap.gTabWrap { margin:0 10px 35px 10px; padding:0; background:none; }
+.s12 .tabWrap.gTabWrap .uiDropCont { width:100%; }
+.s12 .tabWrap.gTabWrap br {display:none;}
+
+.win .exeTab .uiDropCont {display:inline-block; border:1px solid #007abc; border-radius:2px;}
+.win .exeTab .uiDropCont a {display:inline-block; float:left; border-left:1px solid #007abc; padding:8px 20px 12px 20px; color:#0061a0; font-weight:bold; }
+.win .exeTab .uiDropCont a:first-child {border-left:0;}
+.win .exeTab .uiDropCont a.on { background:#007abc; color:#fff; }
+
+.s12 .exeTab .uiDropCont {width:100%;}
+.s12 .exeTab .uiDropCont a {display:block; padding:9px 10px 11px 10px; border-top:1px solid #ccc;}
+.s12 .exeTab .uiDropCont a:first-child {border-top:0;}
+
+.searchTab {text-align:center; margin-top:40px;}
+.s34 .searchTab a {color:#0061a0; display:inline-block; padding:0 6px;}
+.s34 .searchTab a.on {color:#333; font-weight:bold;}
+
+.s12 .searchTab {padding:0 10px; font-size:14px; text-align:left;} 
+.s12 .searchTab.uiDrop .btnSelect {height:38px; border-color:#0061a0;}
+.s12 .searchTab.uiDrop .btnSelect[aria-expanded="true"] {color:#333;}
+.s12 .searchTab.uiDrop .uiDropCont {top:37px; border-color:#0061a0; width:(100% - 20px); width:-webkit-calc(100% - 20px); width:-moz-calc(100% - 20px);}
+.s12 .searchTab.uiDrop .uiDropCont a {display:block; border-top:1px solid #0061a0; line-height:37px; padding:0 10px; color:#0061a0;}
+.s12 .searchTab.uiDrop .uiDropCont a:first-child {border-top:0}
+
+.subTabBox ul {overflow:hidden; display:inline-block; border:1px solid #cccccc; border-radius:2px;}
+.subTabBox ul li {float:left; border-left:1px solid #ccc;}
+.subTabBox ul li:first-child {border:0;}
+.subTabBox ul li a {display:block; padding:5px 20px 7px 20px; font-weight:bold; color:#0061a0;}
+.subTabBox ul li.on a {background:#f7f7f7; color:#333;}
+
+.subTabWrap {position:relative; margin:30px 0 10px 0;}
+.subTabWrap h2 {display:inline-block; margin:0 20px 0 0; padding:0;}
+.s34 .subTabWrap h2 { vertical-align:top; line-height:30px;}
+.subTabWrap .tblInfo {position:absolute; top:8px; right:0; padding:0;}
+.s34 .subTabWrap .subTabBox {display:inline-block;}
+.s12 .subTabWrap {padding:0 10px;}
+.s12 .subTabWrap .subTabBox {margin-top:10px;}
+.s12 .subTabWrap .tblInfo {top:auto; bottom:8px; right:10px;}
+.s12 .subTabBox ul li a { font-size:14px; padding:6px 20px;}
+.ios .subTabBox ul li a {padding:7px 20px 5px 20px}

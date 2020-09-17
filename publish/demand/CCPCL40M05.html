@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Step1 기본정보입력(예상사고보험금 조회) - MetLife</title>
+<!-- jQuery v1.12.4 -->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/plugins.js"></script>
+<link rel="stylesheet" href="../../css/metLife.css">
+</head>
+
+<body>
+	<div id="skipNavi">
+		<a href="#MetLifeContent">본문 바로가기</a><a href="#MetLifeGnb">주메뉴
+			바로가기</a>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="logo">
+				<a href="#none"><img src="../../images/logo_metlife.png"
+					alt="MetLife"></a>
+			</h1>
+			<div class="groupL">
+				<a href="#menu" class="icoMenu exe_menu">메뉴 <span class="hide">열기</span></a>
+				<a href="#none" class="icoHome">홈</a>
+
+				<div class="searchWrap">
+					<button type="button" class="exeSearch icoSearch">검색</button>
+					<div class="searchBoxWrap">
+						<div class="searchBox">
+							<input type="text" class="inpSearch" placeholder="검색">
+							<button type="button" class="btnSearch">
+								<span>검색</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="groupR">
+				<a href="#none" class="icoLog">로그인</a> <a href="#none"
+					class="icoMetLife">MetLife 홈</a>
+			</div>
+		</header>
+
+		<!-- 전체메뉴 -->
+		<section id="menu" class="menuWrap">
+			<h1 class="hide">전체메뉴</h1>
+			<nav>
+				<ul class="allMenu">
+					<li><a href="#none">계약조회</a>
+						<ul>
+							<li><a href="#none">통합정보조회</a></li>
+							<li><a href="#none">변액보험조회</a></li>
+							<li><a href="#none">e-모니터링</a></li>
+							<li><a href="#none">VUL</a></li>
+							<li><a href="#none">전자청약서류조회</a></li>
+						</ul></li>
+					<li><a href="#none">보험료납입</a>
+						<ul>
+							<li><a href="#none">보험료납입</a></li>
+							<li><a href="#none">보험료자동대출신청</a></li>
+							<li><a href="#none">입출금내역조회</a></li>
+							<li><a href="#none">보험료납입일시중지</a></li>
+						</ul></li>
+					<li><a href="#none">자동이체</a>
+						<ul>
+							<li><a href="#none">자동이체신청</a></li>
+							<li><a href="#none">자동이체해지</a></li>
+							<li><a href="#none">정기추가납입신청</a></li>
+							<li><a href="#none">정기추가납입해지</a></li>
+						</ul></li>
+					<li><a href="#none">보험계약대출</a>
+						<ul>
+							<li><a href="#none">보험계약대출신청</a></li>
+							<li><a href="#none">보험료자동대출신청</a></li>
+							<li><a href="#none">대출원리금상환</a></li>
+							<li><a href="#none">자동대출원리금상환</a></li>
+							<li><a href="#none">대출내역조회</a></li>
+						</ul></li>
+					<li><a href="#none">변경</a>
+						<ul>
+							<li><a href="#none">펀드변경</a></li>
+							<li><a href="#none">계약변경내역조회</a></li>
+						</ul></li>
+					<li><a href="#none">출금</a>
+						<ul>
+							<li><a href="#none">종도인출</a></li>
+							<li><a href="#none">분할보험금</a></li>
+							<li><a href="#none">만기보험금</a></li>
+							<li><a href="#none">배당금</a></li>
+							<li><a href="#none">해지환급금</a></li>
+							<li><a href="#none">휴면보험금</a></li>
+							<li><a href="#none">청약철회</a></li>
+							<li><a href="#none">입출금내역조회</a></li>
+						</ul></li>
+					<li><a href="#none">보험금청구</a>
+						<ul>
+							<li><a href="#none">접수절차안내</a></li>
+							<li><a href="#none">팩스접수안내</a></li>
+							<li><a href="#none">구비서류안내</a></li>
+							<li><a href="#none">예상보험금조회</a></li>
+							<li><a href="#none">인터넷보험금청구</a></li>
+							<li><a href="#none">보험금지급내역조회</a></li>
+							<li><a href="#none">보험범죄신고센터</a></li>
+						</ul></li>
+					<li><a href="#none">개인정보변경</a>
+						<ul>
+							<li><a href="#none">주소및정보변경</a></li>
+							<li><a href="#none">마케팅동의및철회</a></li>
+						</ul></li>
+					<li><a href="#none">증명서/구비서류</a>
+						<ul>
+							<li><a href="#none">보험증권</a></li>
+							<li><a href="#none">소득공제납입증명서</a></li>
+							<li><a href="#none">보험료잔액증명서</a></li>
+							<li><a href="#none">보험료납입서식</a></li>
+							<li><a href="#none">제지급금서식</a></li>
+							<li><a href="#none">변경서식</a></li>
+						</ul></li>
+					<li><a href="#none">인증센터</a>
+						<ul>
+							<li><a href="#none">공인인증센터</a></li>
+							<li><a href="#none">보안카드관리</a></li>
+						</ul></li>
+				</ul>
+			</nav>
+			<button type="button" class="ui_close">닫기</button>
+		</section>
+
+		<!-- sub -->
+		<section class="subNav">
+			<nav id="MetLifeGnb" class="uiMbGnb uiDrop">
+				<button type="button" class="uiDropBtn btnSelect">사고보험금</button>
+				<ul class="uiDropCont">
+					<li><a href="#none">접수절차안내</a></li>
+					<li><a href="#none">팩스접수안내</a></li>
+					<li><a href="#none">구비서류안내</a></li>
+					<li class="on"><a href="#none">예상사고보험금조회</a></li>
+					<li><a href="#none">인터넷사고보험금청구</a></li>
+					<li><a href="#none">사고보험금지급내역조회</a></li>
+					<li><a href="#none">보험범죄신고센터</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<section class="container">
+			<div class="pageLocation">
+				<a href="#none">홈</a> <a href="#none">사고보험금</a> <span>예상사고보험금</span>
+			</div>
+			<div class="containerWrap" id="MetLifeContent">
+				<h1>예상사고보험금 조회</h1>				
+				<div class="contUnit">
+					<div class="stepList">
+						<ul role="tablist">
+							<li class="active" role="tab" aria-selected="true"><span>1</span><strong>기본정보
+									입력</strong></li>
+							<li role="tab"><span>2</span><strong>입력내용 확인</strong></li>
+							<li role="tab"><span>3</span><strong>결과확인</strong></li>
+						</ul>
+					</div>
+					<div class="topInfoBtn">
+						<a href="#none" class="btnWht">사고보험금지급내역조회</a><br class="onlyM">
+						<a href="#none" class="btnWht">인터넷사고보험금 청구</a><br class="onlyM">
+						<a href="#none" class="btnWht">구비서류안내</a>
+						<p class="txtPara">계약자와 피보험자 동일한 상품에 한해서 예상사고보험금 조회가 가능합니다.</p>
+					</div>
+					<!-- 신청가능한 계약이 없는 경우 -->
+					<div class="infoLineBox alignC">
+						<strong>사고보험금 청구 가능한 계약이 있는 경우에만 예상사고보험금 조회가 가능합니다.</strong>
+					</div>
+					<!--// 신청가능한 계약이 없는 경우 -->
+
+					<!-- 신청가능한 계약이 있는 경우 -->
+					<table class="tblRsp">
+						<caption>사고보험금 지급가능한 계약목록</caption>
+						<colgroup>
+							<col style="width: 9%">
+							<col style="width: auto">
+							<col style="width: 8%">
+							<col style="width: 8%">
+							<col style="width: 8%">
+							<col style="width: 9%">
+							<col style="width: 9%">
+							<col style="width: 8%">
+							<col style="width: 8%">
+							<col style="width: 8%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">증권번호</th>
+								<th scope="col">상품명</th>
+								<th scope="col">계약자</th>
+								<th scope="col">계약일자</th>
+								<th scope="col">부활일자</th>
+								<th scope="col">최종납입년월(횟수)</th>
+								<th scope="col" class="txtR">1회보험료</th>
+								<th scope="col">계약상태</th>
+								<th scope="col">수익자<br>(입원장해)
+								</th>
+								<th scope="col">비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="int">******1234</td>
+								<td class="int">무배당 마스터플랜 변액유니버셜보험</td>
+								<td data-title="계약자">홍길동</td>
+								<td data-title="계약일자">2015/12/04</td>
+								<td data-title="부활일자">2015/12/04</td>
+								<td data-title="최종납입년월(횟수)">2016/09(130)</td>
+								<td data-title="1회보험료" class="txtR">135,280</td>
+								<td data-title="계약상태">정상</td>
+								<td data-title="수익자(입원장해)">홍길동</td>
+								<td data-title="비고">청구가능</td>
+							</tr>
+							<tr>
+								<td class="int">******5696</td>
+								<td class="int">무배당 100세 Plus 종신암보험</td>
+								<td data-title="계약자">홍길동</td>
+								<td data-title="계약일자">2015/12/04</td>
+								<td data-title="부활일자">2015/12/04</td>
+								<td data-title="최종납입년월(횟수)">2016/08(56)</td>
+								<td data-title="1회보험료" class="txtR">69,050</td>
+								<td data-title="계약상태">정상</td>
+								<td data-title="수익자(입원장해)">홍길동</td>
+								<td data-title="비고">청구가능</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btnWrapC">
+						<button type="button" class="btnMore">더보기</button>
+					</div>
+
+					<div class="hWrap">
+						<h2>질병정보</h2>
+						<p class="tblInfo">
+							<span class="required">필수입력</span> 필수입력
+						</p>
+					</div>
+					<div class="formWrap plusFrm">
+						<div class="inputBox">
+							<label for="accType" class="blDot">사고유형
+								<span class="required">필수입력</span>
+							</label> <select id="accType" class="uiSelect">
+								<option>선택하여 주십시요.</option>
+							</select>
+						</div>
+						<div class="inputBox">
+							<label for="selYear" class="blDot">사고일자 <span
+								class="required">필수입력</span></label>
+							<div class="inpSelGrp">
+								<div>
+									<select class="uiSelect" id="selYear" title="년도">
+										<option>년도</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="월">
+										<option>월</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="일">
+										<option>일</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="inputBox">
+							<label for="disCode" class="blDot">질병코드 <span
+								class="required">필수입력</span></label>
+							<div class="psBtn">
+								<span><input type="text" id="disCode"
+									placeholder="예) H2620"></span> <span class="btnS"><a
+									href="#none" class="btnWht" target="_blank" title="새창 이동">찾기</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="hWrap">
+						<h2>청구정보</h2>
+						<p class="tblInfo blockL">
+							<input type="checkbox" id="gips"><label for="gips">깁스여부
+								(깁스 치료 하신 경우 체크하시기 바랍니다.)</label>
+						</p>
+					</div>
+					<div class="formWrap plusFrm">
+						<h3>입원</h3>
+						<div class="inputBox">
+							<label for="selYear2" class="blHyp">입원일자</label>
+							<div class="inpSelGrp">
+								<div>
+									<select class="uiSelect" id="selYear2" title="년도">
+										<option>년도</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="월">
+										<option>월</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="일">
+										<option>일</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="inputBox">
+							<label for="selYear8" class="blHyp">퇴원일자</label>
+							<div class="inpSelGrp">
+								<div>
+									<select class="uiSelect" id="selYear2" title="년도">
+										<option>년도</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="월">
+										<option>월</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="일">
+										<option>일</option>
+									</select>
+								</div>
+							</div>
+							<button type="button" class="btnContG">반영</button>
+						</div>
+						<div class="inputBox">
+							<p>
+								<input type="checkbox" id="YS"><label for="YS">중환자실
+									입원여부 (중환자실 입원하신 경우 중환자실 입원 여부에 체크하시기 바랍니다.)</label>
+							</p>
+						</div>
+						<div class="inputBoxTg">
+							<span class="labelType blN">입원일수 : <strong>000일</strong></span>
+							<div class="frmResult">
+								<span> 2016/01/01~2016/01/31
+									<button type="button" class="btnDel">삭제</button>
+								</span> <span> 2016/01/01~2016/01/31
+									<button type="button" class="btnDel">삭제</button>
+								</span> <span> 2016/01/01~2016/01/31
+									<button type="button" class="btnDel">삭제</button>
+								</span>
+							</div>
+						</div>
+						<h3>통원</h3>
+						<div class="inputBox">
+							<label for="selYear3" class="blHyp">통원일자</label>
+							<div class="inpSelGrp">
+								<div>
+									<select class="uiSelect" id="selYear3" title="년도">
+										<option>년도</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="월">
+										<option>월</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="일">
+										<option>일</option>
+									</select>
+								</div>
+							</div>
+							<button type="button" class="btnContG">반영</button>
+							<span class="helpTxt block">통원 일자를 선택하세요. 회차별로 모두 입력하세요</span>
+						</div>
+						<div class="inputBoxTg">
+							<span class="labelType blN">통원회차 : <strong>000회</strong></span>
+							<div class="frmResult quad">
+								<span> 2016/01/01
+									<button type="button" class="btnDel">삭제</button>
+								</span> <span> 2016/01/01
+									<button type="button" class="btnDel">삭제</button>
+								</span> <span> 2016/01/01
+									<button type="button" class="btnDel">삭제</button>
+								</span> <span> 2016/01/01
+									<button type="button" class="btnDel">삭제</button>
+								</span>
+							</div>
+						</div>
+						<h3>
+							치료 <span>(방사선 치료를 진행한 경우 입력하시기 바랍니다.)</span>
+						</h3>
+						<div class="inputBox">
+							<label for="selYear4" class="blHyp">치료일자</label>
+							<div class="inpSelGrp">
+								<div>
+									<select class="uiSelect" id="selYear4" title="년도">
+										<option>년도</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="월">
+										<option>월</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="일">
+										<option>일</option>
+									</select>
+								</div>
+							</div>
+							<button type="button" class="btnContG">반영</button>
+							<span class="helpTxt block">치료 일자를 선택하세요. 회차별로 모두 입력하세요</span>
+						</div>
+						<div class="inputBoxTg">
+							<span class="labelType blN">치료회차 : <strong>000회</strong></span>
+							<div class="frmResult quad">
+								<span> 2016/01/011
+									<button type="button" class="btnDel">삭제</button>
+								</span> <span> 2016/01/01
+									<button type="button" class="btnDel">삭제</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="formWrap plusFrm secGr">
+						<h3>수술</h3>
+						<div class="inputBox">
+							<label for="selYear5" class="blHyp">수술일자</label>
+							<div class="inpSelGrp">
+								<div>
+									<select class="uiSelect" id="selYear5" title="년도">
+										<option>년도</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="월">
+										<option>월</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="일">
+										<option>일</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="inputBox">
+							<label for="opCode" class="blHyp">수술명</label>
+							<div class="psBtn">
+								<span><input type="text" class="sizeL" id="opCode"></span>
+								<span class="btnS"><a href="#none" class="btnWht"
+									target="_blank" title="새창 이동">찾기</a></span>
+							</div>
+							<button type="button" class="btnContG">반영</button>
+						</div>
+						<div class="inputBoxTg">
+							<span class="labelType blN">수술일자/수술명</span>
+							<div class="frmResult">
+								<p class="valTxt">
+									<span>2016/01/01</span> <span>악성종양이외의결장절제술, 맹장절제술</span>
+									<button type="button" class="btnDel">삭제</button>
+								</p>
+								<p class="valTxt">
+									<span>2016/01/01</span> <span>맹장절제술</span>
+									<button type="button" class="btnDel">삭제</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="formWrap plusFrm secGr">
+						<h3>진단</h3>
+						<div class="inputBox">
+							<label for="selYear6" class="blHyp">진단일자</label>
+							<div class="inpSelGrp">
+								<div>
+									<select class="uiSelect" id="selYear6" title="년도">
+										<option>년도</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="월">
+										<option>월</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="일">
+										<option>일</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="inputBox">
+							<label for="physical" class="blHyp">신체기관</label>
+							<div class="halfBox">
+								<span> <select class="uiSelect" id="physical" title="국가">
+										<option>신체기관대분류</option>
+								</select>
+								</span> <span> <select class="uiSelect" title="실거주지">
+										<option>신체기관분류</option>
+								</select>
+								</span>
+							</div>
+							<button type="button" class="btnContG">반영</button>
+						</div>
+						<div class="inputBox">
+							<p>
+								<input type="checkbox" id="YS2"><label for="YS2">대장점막내암
+									여부 (진단내용 중 대장점막내암에 해당되는 경우 체크하시기 바랍니다.)</label>
+							</p>
+						</div>
+						<div class="inputBoxTg">
+							<span class="labelType blN">진단일자/신체기관</span>
+							<div class="frmResult">
+								<p class="valTxt">
+									<span>2016/01/01</span> <span>호흡기 및 흉곽내 기관 / 심장, 종격 및 흉막</span>
+									<button type="button" class="btnDel">삭제</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="formWrap plusFrm secGr">
+						<h3>장해</h3>
+						<div class="inputBox">
+							<label for="selYear7" class="blHyp">장해진단일자</label>
+							<div class="inpSelGrp">
+								<div>
+									<select class="uiSelect" id="selYear7" title="년도">
+										<option>년도</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="월">
+										<option>월</option>
+									</select>
+								</div>
+								<div>
+									<select class="uiSelect" title="일">
+										<option>일</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="inputBox">
+							<span class="labelType blHyp">신체부위</span>
+							<p class="inpChr">
+								<input type="radio" name="body" id="body01"><label for="body01">눈</label> 
+								<input type="radio" name="body" id="body02"><label for="body02">귀</label> 
+								<input type="radio" name="body" id="body03"><label for="body03">코</label> 
+								<input type="radio" name="body" id="body04"><label for="body04">입/말하기</label> 
+								<input type="radio" name="body" id="body05"><label for="body05">외모</label> 
+								<input type="radio" name="body" id="body06"><label for="body06">척추</label> 
+								<input type="radio" name="body" id="body07"><label for="body07">체간골</label> 
+								<input type="radio" name="body" id="body08"><label for="body08">팔</label> 
+								<input type="radio" name="body" id="body09"><label for="body09">다리</label> 
+								<input type="radio" name="body" id="body10"><label for="body10">손가락</label> 
+								<input type="radio" name="body" id="body11"><label for="body11">발가락</label> 
+								<input type="radio" name="body" id="body12"><label for="body12">흉복부장기</label> 
+								<input type="radio" name="body" id="body13"><label for="body13">신경계</label>
+							</p>
+							<p class="inpTxt">(재해관여율 : )</p>
+						</div>
+						<div class="inputBox">
+							<span class="labelType blHyp">장애등급</span>
+							<div class="gradeGp">
+								<div class="psBtn">
+									<span>1차</span> <span><input type="text" title="1차 장애등급"></span>
+									<span class="btnS"><a href="#none" class="btnWht"
+										target="_blank" title="새창 이동">찾기</a></span>
+								</div>
+								<div class="psBtn">
+									<span>2차</span> <span><input type="text" title="2차 장애등급"></span>
+									<span class="btnS"><a href="#none" class="btnWht"
+										target="_blank" title="새창 이동">찾기</a></span>
+								</div>
+								<div class="psBtn">
+									<span>3차</span> <span><input type="text" title="3차 장애등급"></span>
+									<span class="btnS"><a href="#none" class="btnWht"
+										target="_blank" title="새창 이동">찾기</a></span>
+								</div>
+								<div class="psBtn">
+									<span>4차</span> <span><input type="text" title="4차 장애등급"
+										disabled="disabled"></span> <span class="btnS"><a
+										href="#none" class="btnWht disabled" target="_blank"
+										title="새창 이동">찾기</a></span>
+								</div>
+								<button type="button" class="btnContG" disabled="disabled">반영</button>
+							</div>
+						</div>
+						<div class="inputBoxTg">
+							<span class="labelType blN">진단일자/신체부위/등급</span>
+							<div class="frmResult">
+								<p class="valTxt">
+									<span>2016/01/01</span> <span>눈</span> <span>100%</span>
+									<button type="button" class="btnDel">삭제</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--// 신청가능한 계약이 있는 경우 -->
+					<div class="btnWrap">
+						<a href="#none" class="btnCont">입력 내용 확인</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footerWrap">
+				<nav>
+					<ul class="totalMenu">
+						<li><strong>계약조회</strong>
+							<ul>
+								<li><a href="#none">통합정보조회</a></li>
+								<li><a href="#none">변액보험조회</a></li>
+								<li><a href="#none">e-모니터링</a></li>
+								<li><a href="#none">전자청약서류조회</a></li>
+							</ul></li>
+						<li><strong>보험료납입</strong>
+							<ul>
+								<li><a href="#none">보험료납입</a></li>
+								<li><a href="#none">보험료자동대출신청</a></li>
+								<li><a href="#none">입출금내역조회</a></li>
+								<li><a href="#none">보험료납입일시중지</a></li>
+							</ul></li>
+						<li><strong>자동이체</strong>
+							<ul>
+								<li><a href="#none">자동이체신청</a></li>
+								<li><a href="#none">자동이체해지</a></li>
+								<li><a href="#none">정기추가납입신청</a></li>
+								<li><a href="#none">정기추가납입해지</a></li>
+							</ul></li>
+						<li><strong>보험계약대출</strong>
+							<ul>
+								<li><a href="#none">보험계약대출신청</a></li>
+								<li><a href="#none">보험료자동대출신청</a></li>
+								<li><a href="#none">대출원리금상환</a></li>
+								<li><a href="#none">자동대출원리금상환</a></li>
+								<li><a href="#none">대출내역조회</a></li>
+							</ul></li>
+						<li><strong>변경</strong>
+							<ul>
+								<li><a href="#none">펀드변경</a></li>
+								<li><a href="#none">계약변경내역조회</a></li>
+							</ul></li>
+						<li><strong>출금</strong>
+							<ul>
+								<li><a href="#none">종도인출</a></li>
+								<li><a href="#none">분할보험금</a></li>
+								<li><a href="#none">만기보험금</a></li>
+								<li><a href="#none">배당금</a></li>
+								<li><a href="#none">해지환급금</a></li>
+								<li><a href="#none">휴면보험금</a></li>
+								<li><a href="#none">청약철회</a></li>
+								<li><a href="#none">입출금내역조회</a></li>
+							</ul></li>
+						<li><strong>사고보험금</strong>
+							<ul>
+								<li><a href="#none">접수절차안내</a></li>
+								<li><a href="#none">팩스접수안내</a></li>
+								<li><a href="#none">구비서류안내</a></li>
+								<li><a href="#none">예상사고보험금조회</a></li>
+								<li><a href="#none">인터넷사고보험금청구</a></li>
+								<li><a href="#none">사고보험금지급내역조회</a></li>
+								<li><a href="#none">보험범죄신고센터</a></li>
+							</ul></li>
+						<li><strong>개인정보변경</strong>
+							<ul>
+								<li><a href="#none">주소및정보변경</a></li>
+								<li><a href="#none">마케팅동의및철회</a></li>
+							</ul></li>
+						<li><strong>증명서/서식</strong>
+							<ul>
+								<li><a href="#none">보험증권</a></li>
+								<li><a href="#none">소득공제납입증명서</a></li>
+								<li><a href="#none">보험료잔액증명서</a></li>
+								<li><a href="#none">보험료납입서식</a></li>
+								<li><a href="#none">제지급금서식</a></li>
+								<li><a href="#none">변경서식</a></li>
+							</ul></li>
+						<li><a
+							href="http://corp.metlife.co.kr:83/jsp/ws/cybr/retfund_login.jsp?loginType=1"
+							target="_blank" title="새창 열림">퇴직연금 로그인</a> <a
+							href="http://www.metlife.co.kr" target="_blank" title="새창 열림">MetLife
+								홈</a></li>
+					</ul>
+				</nav>
+				<section class="footerItem">
+					<div class="globalLang">
+						<strong>국가선택</strong>
+						<div class="uiCountry uiDrop">
+							<button type="button" class="uiDropBtn btnSelect">south
+								Korea</button>
+							<div class="uiDropCont">
+								<strong>America</strong>
+								<ul>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagUSA">USA</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagArgentina">Argentina</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagBrazil">Brazil</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagChile">Chile</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagChile">Chile ProVida</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagColombia">Colombia</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagMexico">Mexico</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagUruguay">Uruguay</a></li>
+								</ul>
+								<strong>Asia</strong>
+								<ul>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagAustralia">Australia</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagBangladesh">Bangladesh</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagChina">China</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagHongKong">Hong Kong</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagIndia">India</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagJapan">Japan</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagKorea">Korea</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagMalaysia">Malaysia</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagNepal">Nepal</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagVitenam">Vitenam</a></li>
+								</ul>
+								<strong>Europe</strong>
+								<ul>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagBulgaria">Bulgaria</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagCzech">Czech Republic</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagCyprus">Cyprus</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagFrance">France</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagGreece">Greece</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagHungary">Hungary</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagIreland">Ireland</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagItaly">Italy</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagPoland">Poland</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagPortugal">Portugal</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagRomania">Romania</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagRussia">Russia</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagSlovakia">Slovakia</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagSpain">Spain</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagTurkey">Turkey</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagUkraine">Ukraine</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagKingdom">United Kingdom</a></li>
+								</ul>
+								<strong>Middle East and Africa</strong>
+								<ul>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagBahrain">Bahrain</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagEgypt">Egypt</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagJordan">Jordan</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagKuwait">Kuwait</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagLebanon">Lebanon</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagOmen">Omen</a></li>
+									<li><a href="#none" target="_blank" title="새창열림"
+										class="flagArab">United Arab Emirates</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="globalMain">
+						<a href="#none" target="_blank" title="새창열림">MetLife Worldwide</a>
+					</div>
+				</section>
+				<section class="footerBottom">
+					<div class="footerLogo">
+						<img src="../../images/logo_metlife.png" alt="MetLife"> <strong>콜센터
+							: 1588-9600</strong>
+					</div>
+					<div class="sns">
+						<a href="#none" target="_blank" title="새창열림"><span>메트라이프</span>
+							공식 페이스북</a>
+					</div>
+					<div class="footerMenu">
+						<a href="#none">개인정보 처리방침</a>
+						<div class="fmenu uiDrop">
+								<button type="button" class="uiDropBtn btnSelect">약관 및 정책</button>
+								<ul class="footerSub uiDropCont">
+								<li><a href="#none">전자금융서비스 이용약관</a></li>
+								<li><a href="#none">전자금융서비스 기본약관</a></li>
+								<li><a href="#none">휴대폰 인증 전문</a></li>
+								<li><a href="#none">보험범죄신고센터</a></li>
+								<li><a href="#none">장애인 보험가입차별 신고센터</a></li>
+								<li><a href="#none">보호금융상품등록부</a></li>
+								<li><a href="#none">서민금융 1332</a></li>
+								<li><a href="#none">웹접근성 안내</a></li>
+								<li><a href="#none">본인정보 이용제공 조회</a></li>
+								<li><a href="#none">개인신용정보 이용현황 조회</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="copy">
+						서울시 강남구 테헤란로 316(역삼2동, 메트라이프타워) <strong>콜센터 : 국내
+							1588-9600 해외 : +82-2-2017-6700</strong>
+						<p>&copy; 2017 메트라이프생명보험(주) All Rights Reserved.</p>
+					</div>
+					<div class="authMark">
+						<img src="../../images/img_auth01.png" alt="국제정보보호표준 ISO27001인증기업 마크">
+						<img src="../../images/img_auth02.png"
+							alt="미래창조과학부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+					</div>
+				</section>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title></title>
+<!-- jQuery v1.12.4 -->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/plugins.js"></script>
+<link rel="stylesheet" href="../../css/metLife.css">
+
+</head>
+<body>
+
+<div style="height: 300px; background-color: red">
+height: 300px; background-color: red
+	<form method="post" action="./submitPage.html">
+		<input type="submit" value="전송">
+	</form>
+</div>
+
+<!-- iframe page에 추가 -->
+<style>
+	html, body { height: auto; }
+  #inneriframe { position : absolute; top : 0px; left : 0px; visibility: hidden; }
+</style>
+
+<script>
+	function rsize() {
+		var $iframe = $('#inneriframe');
+		var $height = $('body').innerHeight();
+		$iframe.attr('src', 'http://192.168.10.72:7070/metCBS/publish/iframeTest/auto_resize.html?height='+$height);
+		
+		console.log($height);
+	}
+	$(document).ready(function(){
+		setTimeout(function(){
+			rsize();
+		},100);
+	});
+	$(window).on("resize", function() {
+		setTimeout(function(){
+			rsize();
+		},100);
+	});
+</script>
+
+<iframe id="inneriframe" width="10" height="10"></iframe>
+<!-- // iframe page에 추가 -->
+
+</body>
+</html>

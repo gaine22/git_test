@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 사이버창구 이용가이드 - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">		
+		<div class="popWrap">
+			<h1>사이버창구 이용가이드</h1>			
+			<section class="container srvGuide">
+				<div class="tabWrap gTabWrap uiDrop">
+					<button type="button" class="uiDropBtn btnSelect">공인인증서 이용안내</button>
+					<ul class="uiDropCont">
+						<li><a href="#none">사이트이용<br> 자주하는질문</a></li>
+						<li class="on"><a href="#none">공인인증서<br> 이용안내</a></li>
+						<li><a href="#none">비밀번호<br> 이용안내</a></li>
+						<li><a href="#none">서비스<br> 이용안내</a></li>
+						<li><a href="#none">이용시간<br> 안내</a></li>
+						<li><a href="#none">전자금융거래<br> 유의사항</a></li>
+						<li><a href="#none">보안<br>프로그램</a></li>
+						<li class="onlyW"><a href="#none">모바일창구<br> 가이드</a></li>
+					</ul>
+				</div>
+				<div class="subTabWrap">
+					<h2>공인인증서 이용안내</h2>
+					<div class="subTabBox">
+						<ul>
+							<li><a href="#none">공인인증서란</a></li>
+							<li class="on"><a href="#none"><span class="onlyW">공인</span>인증서 발급</a></li>
+							<li><a href="#none"><span class="onlyW">공인</span>인증서 오류</a></li>						
+						</ul>
+					</div>
+				</div>		
+				<div class="tabConts">		
+					<h3 class="hide">공인인증서발급</h3>
+					<p>공인인증서를 발급받기 위해서 거래하시는 은행이나 증권사를 통해 신청하셔야 합니다.</p>
+					<ol class="srvStepList">
+						<li>
+							<span class="hide">step1</span>
+							<strong>거래은행, 증권사 방문</strong>
+							<div>인터넷뱅킹 신청 및<br> 공인인증서 신청등록</div>
+						</li>
+						<li class="num2">
+							<span class="hide">step2</span>
+							<strong>거래은행,증권사 웹사이트 방문</strong>
+							<div>웹사이트 접속하여<br class="onlyW"> 공인인증서 발급</div>
+						</li>
+						<li class="num3">
+							<span class="hide">step3</span>
+							<strong>메트라이프생명 사이버창구 방문</strong>
+							<div>로그인 및 거래 시<br class="onlyW"> 공인인증서 사용</div>
+						</li>
+					</ol>
+				</div>
+			</section>
+			<button type="button" class="uiPopClose">닫기</button>
+		</div>	
+		<script>			
+			$('.gTabWrap').uiDropdowns();
+			$('.uiAcco').uiAccordion();
+		</script>
+			
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>[팝업] 청구서류 확인하기 - MetLife</title>		
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body class="popup">
+		<div class="popGlobal">
+			<header>
+				<h1 class="logo"><img src="../../images/logo_metlife.png" alt="MetLife"></h1>
+			</header>
+			<section class="popContents">
+				<div class="hWrap">
+					<h1>사고보험금 청구서류 확인하기</h1>
+					<p class="tblInfo"><span class="required">필수입력</span> 표시는 필수사항입니다.</p>
+					<p class="listHyphen">아래 5가지 항목을 정확히 선택해 주셔야 고객님의 ‘보험료 청구서류’ 확인이 가능합니다.</p>
+				</div>
+				<div class="formWrap">
+					<div class="inputBox">
+						<label for="q1">누가 청구(방문) 하나요? <span class="required">필수입력</span></label>
+						<select id="q1" class="uiSelect">
+							<option>대표수익자</option>
+						</select>
+					</div>						
+					<div class="inputBox">
+						<label for="q2">치료받으신 분은? <span class="required">필수입력</span></label>
+						<select id="q2" class="uiSelect">
+							<option>피보험자(성인)</option>
+						</select>
+					</div>
+					<div class="inputBox">
+						<label for="q3">수익자/계약자 <span class="required">필수입력</span></label>
+						<select id="q3" class="uiSelect">
+							<option>입원/장해수익자(성인)</option>
+						</select>
+					</div>
+					<div class="inputBox">
+						<label for="q4">예상지급액 <span class="required">필수입력</span></label>
+						<select id="q4" class="uiSelect">
+							<option>100만원 이하</option>
+						</select>
+					</div>
+					<div class="inputBox">
+						<label for="q5">청구급부 <span class="required">필수입력</span></label>
+						<select id="q5" class="uiSelect">
+							<option>입원(질병)</option>
+						</select>
+					</div>
+				</div>	
+				<div class="btnWrap">
+					<a href="#" class="btnCont">조회</a>
+				</div>
+				<div class="resultWrap">
+					<h2>구비서류</h2>
+					<h3>공통 구비서류</h3>
+					<ul class="listHyphen">
+						<li>보험금청구서 및 동의서</li>
+						<li>수익자 신분증 사본(신분확인서류 : 공무원증 포함)</li>
+						<li>수익자 통장사본</li>
+					</ul>
+					
+					<h3>청구 시 구비서류</h3>
+					<p class="listHyphen">병명확인 가능한 입퇴원확인서</p>
+					
+					<h2>청구 시 유의사항</h2>
+					<h3>공통구비서류 유의사항</h3>
+					<ul class="listHyphen">
+						<li>보험금 청구서 및 동의서 : 피보험자, 수익자란 각각 서명</li>
+						<li>기지급 수익자 계좌 또는 수익자 지점 내방시 통장사본 생략 가능(수익자 보험료 납입계좌 포함)</li>
+					</ul>
+					
+					<h3>청구 시 구비서류 유의사항</h3>
+					<ul class="listHyphen">
+						<li>병명확인, 입퇴원기간, 병원직인 날인 여부 확인</li>
+						<li>지급액 50만원 이하건 병원서류 사본 접수 가능</li>
+					</ul>
+					
+					<h2>가족 계약 배우자 보장 청구 시 추가 제출 서류</h2>
+					<p class="listHyphen">없음</p>
+					
+					<h2>보험금 청구인에 따른 추가 제출 서류</h2>
+					<p class="listHyphen">없음</p>
+					
+					<p class="listImp sm">예상 지급액이 50만원을 초과하는 경우 병원 서류는 원본으로 제출해 주셔야 합니다.</p>
+				</div>
+			</section>
+			<button class="uiPopClose"><span>닫기</span></button>
+		</div>
+</body>
+</html>

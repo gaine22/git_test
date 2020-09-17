@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>E-모니터링 - 메트라이프생명</title>
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body>
+		<div id="skipNavi"> <a href="#MetLifeContent">본문 바로가기</a><a href="#MetLifeGnb">주메뉴 바로가기</a></div>
+		<div class="wrapper">
+			<header class="header">
+				<h1 class="logo"><a href="#none"><img src="../../images/logo_metlife.png" alt="MetLife"></a></h1>
+				<div class="groupL">
+					<a href="#menu" class="icoMenu exe_menu">메뉴 <span class="hide">열기</span></a>
+					<a href="#none" class="icoHome">홈</a>
+					<!-- search -->
+					<div class="searchWrap">
+						<button type="button" class="exeSearch icoSearch"> 검색</button>
+						<div class="searchBoxWrap">
+							<div class="searchBox">
+								<input type="text" class="inpSearch" placeholder="검색">
+								<button type="button" class="btnSearch"><span>검색</span></button>
+							</div>
+						</div>
+					</div>
+					<!--// search -->
+				</div>
+				<div class="groupR">
+					<a href="#none" class="icoLog">로그인</a>
+					<a href="#none" class="icoMetLife">MetLife 홈</a>
+				</div>
+			</header>
+			
+			<!-- 전체메뉴 -->
+			<section id="menu" class="menuWrap">
+				<h1 class="hide">전체메뉴</h1>
+				<nav>
+					<ul class="allMenu">
+					<li>
+						<a href="#none">계약조회</a>
+						<ul> 
+						<li><a href="#none">통합정보조회</a></li> 
+						<li><a href="#none">변액보험조회</a></li> 
+						<li><a href="#none">E-모니터링</a></li> 
+						<li><a href="#none">VUL</a></li> 
+						<li><a href="#none">전자청약서류조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#none">보험료납입</a>
+						<ul> 
+						<li><a href="#none">보험료납입</a></li> 
+						<li><a href="#none">보험료자동대출신청</a></li> 
+						<li><a href="#none">입출금내역조회</a></li> 
+						<li><a href="#none">보험료납입일시중지</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">자동이체</a>
+						<ul> 
+						<li><a href="#none">자동이체신청</a></li> 
+						<li><a href="#none">자동이체해지</a></li> 
+						<li><a href="#none">정기추가납입신청</a></li> 
+						<li><a href="#none">정기추가납입해지</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">보험계약대출</a>
+						<ul> 
+						<li><a href="#none">보험계약대출신청</a></li> 
+						<li><a href="#none">보험료자동대출신청</a></li> 
+						<li><a href="#none">대출원리금상환</a></li> 
+						<li><a href="#none">자동대출원리금상환</a></li> 
+						<li><a href="#none">대출내역조회</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">변경</a>
+						<ul> 
+						<li><a href="#none">펀드변경</a></li> 
+						<li><a href="#none">계약변경내역조회</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">출금</a>
+						<ul> 
+						<li><a href="#none">종도인출</a></li> 
+						<li><a href="#none">분할보험금</a></li> 
+						<li><a href="#none">만기보험금</a></li> 
+						<li><a href="#none">배당금</a></li> 
+						<li><a href="#none">해지환급금</a></li> 
+						<li><a href="#none">휴면보험금</a></li> 
+						<li><a href="#none">청약철회</a></li> 
+						<li><a href="#none">입출금내역조회</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">보험금청구</a>
+						<ul> 
+						<li><a href="#none">접수절차안내</a></li> 
+						<li><a href="#none">팩스접수안내</a></li> 
+						<li><a href="#none">구비서류안내</a></li> 
+						<li><a href="#none">예상보험금조회</a></li> 
+						<li><a href="#none">인터넷보험금청구</a></li> 
+						<li><a href="#none">보험금지급내역조회</a></li> 
+						<li><a href="#none">보험범죄신고센터</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">개인정보변경</a>
+						<ul> 
+						<li><a href="#none">주소및정보변경</a></li> 
+						<li><a href="#none">마케팅동의및철회</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">증명서/구비서류</a>
+						<ul> 
+						<li><a href="#none">보험증권</a></li> 
+						<li><a href="#none">소득공제납입증명서</a></li> 
+						<li><a href="#none">보험료잔액증명서</a></li> 
+						<li><a href="#none">보험료납입서식</a></li> 
+						<li><a href="#none">제지급금서식</a></li>
+						<li><a href="#none">변경서식</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">인증센터</a>
+						<ul> 
+						<li><a href="#none">공인인증센터</a></li> 
+						<li><a href="#none">보안카드관리</a></li> 
+						</ul>
+					</li>
+					</ul>
+				</nav>
+				<button type="button" class="ui_close">닫기</button>
+			</section>
+			
+			<!-- sub -->
+			<section class="subNav">
+				<nav id="MetLifeGnb" class="uiMbGnb uiDrop">
+					<button type="button" class="uiDropBtn btnSelect">계약조회</button>
+					<ul class="uiDropCont">
+					<li><a href="#none">통합정보조회</a></li>
+					<li><a href="#none">변액보험조회</a></li>
+					<li class="on"><a href="#none">E-모니터링</a></li>
+					<li><a href="#none">전자청약서류조회</a></li>
+					</ul>
+				</nav>
+			</section>
+			
+			<section class="container">
+				<div class="pageLocation">
+					<a href="#none">홈</a>
+					<a href="#none">계약조회</a>					
+					<span>E-모니터링</span>
+				</div>
+				<div class="containerWrap" id="MetLifeContent">
+					<h1>E-모니터링</h1>
+					<div class="topInfoTxt">
+						<p>김철수님께서 현재 E-모니터링이 가능한 계약입니다.</p>
+					</div>
+					<div class="contUnit">
+						<p class="listImp"><strong>"확인" 버튼 클릭 시 수정이 불가 하오니 참고하시기 바랍니다.</strong></p>
+						<ul class="mnListBox">
+							<li>
+								<span>1.1</span>
+								고객님이 주민등록번호 앞 6자리는 OOOOOO이 맞습니까?
+								<p>
+									<input type="radio" name="radio1" id="yes01"><label for="yes01">예</label>
+									<input type="radio" name="radio1" id="no01"><label for="no01">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>1.2</span>
+								가입하신 보험의 우편물 수령지는  xx시 xx구 xx동 xx번지, 이메일주소는 [xxxx@ xxx.xxx]로 등록되어 있습니다. 맞습니까?  (1년에 한번씩 계약관리 내용을 발송해 드리겠습니다.)
+								<p>
+									<input type="radio" name="radio2" id="yes02"><label for="yes02">예</label>
+									<input type="radio" name="radio2" id="no02"><label for="no02">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>1-3</span>
+								고객님의 유선번호는 000-000-0000이고, 핸드폰번호는 000-000-0000(으)로 등록되어 있습니다. 맞습니까?
+								<p>
+									<input type="radio" name="radio3" id="yes03"><label for="yes03">예</label>
+									<input type="radio" name="radio3" id="no03"><label for="no03">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>1-4</span>
+								고객님의 국적은 0000이 맞습니까?
+								<p>
+									<input type="radio" name="radio4" id="yes04"><label for="yes04">예</label>
+									<input type="radio" name="radio4" id="no04"><label for="no04">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>2</span>
+								고객님께서 가입하신 000000보험은 00월 00일에 당사 모집인인 000FSR로 부터 직접 상품내용을 설명듣고 청약하셨습니까?
+								<p>
+									<input type="radio" name="radio5" id="yes05"><label for="yes05">예</label>
+									<input type="radio" name="radio5" id="no05"><label for="no05">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>3</span>
+								보험을 가입하시게된 경로는 000(으)로 등록되어 있습니다. 맞습니까?
+								<p>
+									<input type="radio" name="radio6" id="yes06"><label for="yes06">예</label>
+									<input type="radio" name="radio6" id="no06"><label for="no06">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>4-1</span>
+								가입내용은 계약자 000님, 피보험자 000님으로 보험기간 00, 납입기간 00(으)로 되어 있습니다. 맞습니까?
+								<p>
+									<input type="radio" name="radio7" id="yes07"><label for="yes07">예</label>
+									<input type="radio" name="radio7" id="no07"><label for="no07">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>4-2</span>
+								가입 시 청약서에 고객님께서 직접 서명 하셨습니까? <a href="#none" class="btnLine" target="_blank" title="새창이동">청약서 견본</a>
+								<p>
+									<input type="radio" name="radio8" id="yes08"><label for="yes08">예</label>
+									<input type="radio" name="radio8" id="no08"><label for="no08">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>4-3</span>
+								상품주요 내용을 설명한 『상품설명서』를 안내받고 직접 서명 하셨습니까? <a href="#none" class="btnLine" target="_blank" title="새창이동">상품설명서 견본</a>
+								<p>
+									<input type="radio" name="radio9" id="yes09"><label for="yes09">예</label>
+									<input type="radio" name="radio9" id="no09"><label for="no09">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>5</span>
+								이상품의 가입과 관련하여 당사 또는 타사 보험과의 중요사항을 비교하여 설명받고, 해당 『보험계약 비교안내문』에 직접 서명 하셨습니다?  <a href="#none" class="btnLine" target="_blank" title="새창이동">비교안내문 견본</a>
+								<p>
+									<input type="radio" name="radio10" id="yes10"><label for="yes10">예</label>
+									<input type="radio" name="radio10" id="no10"><label for="no10">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>6</span>
+								작성하신 청약서의 "계약전 알릴 의무사항"의 주요내용에 모두 "아니오" (이상없음)로 기재되어 있읍니다. <br>
+								사실과 동일하게 고지 하셨습니까?<br>
+								※ 주요내용 -질병고지, 임신유무, 장애고지, 위험 취미고지, 부업/겸업, 해외출국(위험지역), 음주, 흡연
+								<p>
+									<input type="radio" name="radio11" id="yes11"><label for="yes11">예</label>
+									<input type="radio" name="radio11" id="no11"><label for="no11">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>7-1</span>
+								『가입자 보관용 청약서』를 전달 받으셨습니까? <a href="#none" class="btnLine" target="_blank" title="새창이동">가입자 보관용 청약서 견본</a>
+								<p>
+									<input type="radio" name="radio12" id="yes12"><label for="yes12">예</label>
+									<input type="radio" name="radio12" id="no12"><label for="no12">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>7-2</span>
+								『보험약관』을 받으시고 내용설명 들으셨습니까? <a href="#none" class="btnLine" target="_blank" title="새창이동">해당 상품 약관 바로보기</a>
+								<p>
+									<input type="radio" name="radio13" id="yes13"><label for="yes13">예</label>
+									<input type="radio" name="radio13" id="no13"><label for="no13">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>8</span>
+								1회 보험료 000원은 가입시점에 납입 되었습니다. 1회 보험료 납입은 어떤 방법으로 납입해 주셨나요? 
+								<div class="rdGrp">
+									<p><input type="radio" name="payType" id="pay01"><label for="pay01">즉시이체 (고객님 명의 계좌에서 출금되는 방식)</label></p>									
+									<p><input type="radio" name="payType" id="pay02"><label for="pay02">가상계좌 (당사 거래 계좌로 송금하는 방식)</label></p>		
+									<p><input type="radio" name="payType" id="pay03"><label for="pay03">현급납입 (※ GA는 제외)</label></p>		
+									<p><input type="radio" name="payType" id="pay04"><label for="pay04">FSR(영업사원)이 대신 납입 하였음</label></p>		
+								</div>
+							</li>
+							<li>
+								<span>9</span>
+								<strong>[하이라이프종신보험, 라이프사이클종신보험]</strong><br>
+								[하이라이프종신보험, 라이프사이클종신보험]가입하신 보험은 평생동안 사망사고를 보장해 드리는 보장성 보험으로 만기가 별도로 정해져 있지 않다는 점과 목돈마련을 목적으로 가입하는 단기 저축성 상품과 다르다는 내용 설명 받으셨습니까?
+								<p>
+									<input type="radio" name="radio15" id="yes15"><label for="yes15">예</label>
+									<input type="radio" name="radio15" id="no15"><label for="no15">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>10</span>									
+								또한 중도 해지 시 해지환급금이 납입보험료보다 적을 수 있다는 것도 안내 받으셨습니까?
+								<p>
+									<input type="radio" name="radio16" id="yes16"><label for="yes16">예</label>
+									<input type="radio" name="radio16" id="no16"><label for="no16">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>11</span>
+								<strong>[노후애간병보험 피보험자 61~65세]</strong><br>
+								[노후애간병보험 피보험자 61~65세]최근 5년이내 치매나, 알쯔하이머, 파킨슨병, 뇌졸중증, 외상성 뇌손상으로 의사로 부터 진단 또는 검사를 통하여 질병확정진찰을 받거나, 치료, 입원, 수술, 투약을 받은 사실이 있읍니까?
+								<p>
+									<input type="radio" name="radio17" id="yes17"><label for="yes17">예</label>
+									<input type="radio" name="radio17" id="no17"><label for="no17">아니오</label>
+								</p>
+							</li>
+							<li>
+								<span>12</span>
+								<strong>[노후애간병보험 피보험자 61~65세]</strong><br>
+								[노후애간병보험 피보험자 61~65세] 최근 5년이내 치매나, 알쯔하이머, 파킨슨병, 뇌졸중증, 외상성 뇌손상으로 의사로 부터 진단 또는 검사를 통하여 질병확정진찰을 받거나, 치료, 입원, 수술, 투약을 받은 사실이 있읍니까?
+								<p>
+									<input type="radio" name="radio18" id="yes18"><label for="yes18">예</label>
+									<input type="radio" name="radio18" id="no18"><label for="no18">아니오</label>
+								</p>
+							</li>
+						</ul>
+						<div class="btnWrap">
+							<a href="#none" class="btnLine">이전</a>
+							<a href="#eMonitor" class="btnCont uiLayerpop" data-dialogid="eMonitor">다음</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footerWrap">
+					<nav>
+						<ul class="totalMenu">
+						<li>
+							<strong>계약조회</strong>
+							<ul> 
+							<li><a href="#none">통합정보조회</a></li> 
+							<li><a href="#none">변액보험조회</a></li> 
+							<li><a href="#none">E-모니터링</a></li> 
+							<li><a href="#none">전자청약서류조회</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>보험료납입</strong>
+							<ul> 
+							<li><a href="#none">보험료납입</a></li> 
+							<li><a href="#none">보험료자동대출신청</a></li> 
+							<li><a href="#none">입출금내역조회</a></li> 
+							<li><a href="#none">보험료납입일시중지</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>자동이체</strong>
+							<ul> 
+							<li><a href="#none">자동이체신청</a></li> 
+							<li><a href="#none">자동이체해지</a></li> 
+							<li><a href="#none">정기추가납입신청</a></li> 
+							<li><a href="#none">정기추가납입해지</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>보험계약대출</strong>
+							<ul> 
+							<li><a href="#none">보험계약대출신청</a></li> 
+							<li><a href="#none">보험료자동대출신청</a></li> 
+							<li><a href="#none">대출원리금상환</a></li> 
+							<li><a href="#none">자동대출원리금상환</a></li> 
+							<li><a href="#none">대출내역조회</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>변경</strong>
+							<ul> 
+							<li><a href="#none">펀드변경</a></li> 
+							<li><a href="#none">계약변경내역조회</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>출금</strong>
+							<ul> 
+							<li><a href="#none">종도인출</a></li> 
+							<li><a href="#none">분할보험금</a></li> 
+							<li><a href="#none">만기보험금</a></li> 
+							<li><a href="#none">배당금</a></li> 
+							<li><a href="#none">해지환급금</a></li> 
+							<li><a href="#none">휴면보험금</a></li> 
+							<li><a href="#none">청약철회</a></li> 
+							<li><a href="#none">입출금내역조회</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>사고보험금</strong>
+							<ul> 
+							<li><a href="#none">접수절차안내</a></li> 
+							<li><a href="#none">팩스접수안내</a></li> 
+							<li><a href="#none">구비서류안내</a></li> 
+							<li><a href="#none">예상사고보험금조회</a></li> 
+							<li><a href="#none">인터넷사고보험금청구</a></li> 
+							<li><a href="#none">사고보험금지급내역조회</a></li> 
+							<li><a href="#none">보험범죄신고센터</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>개인정보변경</strong>
+							<ul> 
+							<li><a href="#none">주소및정보변경</a></li> 
+							<li><a href="#none">마케팅동의및철회</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>증명서/서식</strong>
+							<ul> 
+							<li><a href="#none">보험증권</a></li> 
+							<li><a href="#none">소득공제납입증명서</a></li> 
+							<li><a href="#none">보험료잔액증명서</a></li> 
+							<li><a href="#none">보험료납입서식</a></li> 
+							<li><a href="#none">제지급금서식</a></li>
+							<li><a href="#none">변경서식</a></li> 
+							</ul>
+						</li>
+						<li>
+							<a href="http://corp.metlife.co.kr:83/jsp/ws/cybr/retfund_login.jsp?loginType=1" target="_blank" title="새창 열림">퇴직연금 로그인</a>
+							<a href="http://www.metlife.co.kr" target="_blank" title="새창 열림">MetLife 홈</a>
+						</li>
+						</ul>
+					</nav>
+					<section class="footerItem">
+						<div class="globalLang">
+							<strong>국가선택</strong>
+							<div class="uiCountry uiDrop">
+								<button type="button" class="uiDropBtn btnSelect">south Korea</button>
+								<div class="uiDropCont">
+									<strong>America</strong>
+									<ul>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagUSA">USA</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagArgentina">Argentina</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagBrazil">Brazil</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagChile">Chile</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagChile">Chile ProVida</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagColombia">Colombia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagMexico">Mexico</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagUruguay">Uruguay</a></li>
+									</ul>
+									<strong>Asia</strong>
+									<ul>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagAustralia">Australia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagBangladesh">Bangladesh</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagChina">China</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagHongKong">Hong Kong</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagIndia">India</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagJapan">Japan</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagKorea">Korea</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagMalaysia">Malaysia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagNepal">Nepal</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagVitenam">Vitenam</a></li>
+									</ul>
+									<strong>Europe</strong>
+									<ul>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagBulgaria">Bulgaria</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagCzech">Czech Republic</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagCyprus">Cyprus</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagFrance">France</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagGreece">Greece</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagHungary">Hungary</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagIreland">Ireland</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagItaly">Italy</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagPoland">Poland</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagPortugal">Portugal</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagRomania">Romania</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagRussia">Russia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagSlovakia">Slovakia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagSpain">Spain</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagTurkey">Turkey</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagUkraine">Ukraine</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagKingdom">United Kingdom</a></li>
+									</ul>
+									<strong>Middle East and Africa</strong>
+									<ul>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagBahrain">Bahrain</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagEgypt">Egypt</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagJordan">Jordan</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagKuwait">Kuwait</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagLebanon">Lebanon</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagOmen">Omen</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagArab">United Arab Emirates</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="globalMain">
+							<a href="#none" target="_blank" title="새창열림">MetLife Worldwide</a>
+						</div>
+					</section>
+					<section class="footerBottom">
+						<div class="footerLogo">
+							<img src="../../images/logo_metlife.png" alt="MetLife">
+							<strong>콜센터 : 1588-9600</strong>
+						</div>
+						<div class="sns">
+							<a href="#none" target="_blank" title="새창열림"><span>메트라이프</span> 공식 페이스북</a>
+						</div>
+						<div class="footerMenu">
+							<a href="#none">개인정보 처리방침</a>
+							<div class="fmenu uiDrop">
+								<button type="button" class="uiDropBtn btnSelect">약관 및 정책</button>
+								<ul class="footerSub uiDropCont">
+									<li><a href="#none">전자금융서비스 이용약관</a></li>
+									<li><a href="#none">전자금융서비스 기본약관</a></li>
+									<li><a href="#none">휴대폰 인증 전문</a></li>
+									<li><a href="#none">보험범죄신고센터</a></li>
+									<li><a href="#none">장애인 보험가입차별 신고센터</a></li>
+									<li><a href="#none">보호금융상품등록부</a></li>
+									<li><a href="#none">서민금융 1332</a></li>
+									<li><a href="#none">웹접근성 안내</a></li>
+									<li><a href="#none">본인정보 이용제공 조회</a></li>
+									<li><a href="#none">개인신용정보 이용현황 조회</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="copy">
+							서울시 강남구 테헤란로 316(역삼2동, 메트라이프타워) <strong>콜센터 : 국내 1588-9600 해외 : +82-2-2017-6700</strong>
+							<p>&copy; 2017 메트라이프생명보험(주) All Rights Reserved.</p>
+						</div>
+						<div class="authMark">
+							<img src="../../images/img_auth01.png" alt="국제정보보호표준 ISO27001인증기업 마크">
+							<img src="../../images/img_auth02.png" alt="미래창조과학부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+						</div>
+					</section>
+				</div>
+			</footer>
+		</div>
+		<section id="eMonitor" class="uiDialog" role="dialog">
+			<div class="dialogBase">
+				<h1>E-모니터링</h1>
+				<div class="baseCont">
+					확인해 주셔서 감사드립니다.<br>
+					지금까지 확인하신 사항의 자세한 내용은 수령하신 상품약관을 참고 하시기 바라며, 가입하신 보험에 대해 문의사항은 관리지점이나 콜센터로 연락 주시면 친절히 안내해 드리겠습니다. <br>
+					늘 변함없는 모습으로 사랑받는 메트라이프생명이 될 것을 약속 드리며, 고객님의 가정에 건강과 행복이 가득하시길 기원합니다. 감사합니다.
+					<div class="lnContBox">
+						<ul class="listDot">
+							<li>콜센터: 1588-9600</li>
+							<li><a href="http://www.klia.or.kr" target="_blank" title="새창 이동">생명보험 협회 홈페이지(www.klia.or.kr)</a></li>
+						</ul>
+					</div>
+					<div class="btnWrap">
+						<a href="#none" class="btnCont">완료</a>
+					</div>
+				</div>
+				<button type="button" class="uiPopClose">닫기</button>
+			</div>
+		</section>
+		<script>
+			$('.uiLayerpop').uiDialog();
+		</script>
+	</body>
+</html>

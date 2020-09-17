@@ -1,0 +1,66 @@
+@charset "euc-kr"; 
+/************************************************
+Author :  Noh Eun-myoung 
+Version : ING»ý¸í 1.0
+Date : 2014-01-13
+*************************************************/  
+body#guide {margin:0; padding:0; color:#666; font-family:"µ¸¿ò", Tahoma, Arial, Sans-serif; font-size:12px; line-height:1;}
+ 
+.hide {display: none;}
+.hand {cursor: pointer;}
+.hide2 {display: none !important;}
+.divLine {position:relative; width:100%; visibility:visible; margin-bottom:60px; height:1px; color:#8aa22f; font-size:1%; }
+.btnTop {position:relative; z-index:100; overflow:hidden; width:100%; height:20px; margin:-10px 0 -10px; border-bottom:1px solid #ddd}
+.btnTop a {position:absolute; right:0; display:block; width:46px; height:20px; background:url("../guide_img/btn_top.gif") no-repeat 0 0; text-indent:-9999px;}
+.commonCnt .btnTop {border-bottom:0 !important;} /* common.html¿¡¸¸ Àû¿ë */
+ xmp {margin:0; padding:0; word-wrap:break-word; overflow:hidden; width:100%; }
+ xmp, x:-moz-any-link, x:default {overflow:auto !important;} /* Mozilla °è¿­¸¸ ÀÎ½ÄµÇ´Â firefox ÇÙ */
+.colorWt {color:#fff;}
+ 
+/* layout */
+body#guide #guide_wrap h1 {position:absolute; left:18px; top:11px; }
+body#guide #gd_contents{ padding:30px 100px; ;}  
+body#guide #gd_contents h2{  font-size:14px;} 
+body#guide #guide_wrap h3 span {margin-left:10px; font-size:11px; color:#999; vertical-align:middle;}
+body#guide #header {height:50px; border-bottom:5px solid #443730; } 
+body#guide #gnb {overflow:hidden; width:1070px; padding:16px 0 0 220px; }
+body#guide #gnb li {position:relative; float:left; z-index:10;}
+body#guide #gnb li.selected {z-index:100;}
+body#guide #guide_contain {overflow:hidden; clear:both; position:relative; } 
+
+body#guide .tab01 {max-width:100% !important;}
+body#guide .tab01.board li a {padding-right:5px; padding-left:5px;}
+body#guide .tab01.board li.q a {color:red;}
+
+.Guidewrap .guideH2{ background:#bb2c35; padding:20px 20px 10px; color:#fff; font-size:20px;} 
+.Guidewrap .guideH3{ padding:10px 20px 10px; color:#333; font-size:15px;} 
+.Guidewrap  > .cont{ padding:15px; border-bottom:1px solid #ddd; overflow:hidden}
+.Guidewrap  > .cont > div.inC{ overflow:hidden; margin-bottom:40px;}
+.Guidewrap  > .cont > .guideH3{ padding:10px 0 10px; color:#333; font-size:13px;}
+.Guidewrap  > .cont > .tit_h{line-height:150%;margin-bottom:20px;font-weight:bold;font-size:16px;font-family:"¸¼Àº °íµñ","Malgun Gothic";color:#333;display:block}
+.Guidewrap  > .cont h3{line-height:120%;margin-bottom:20px;padding-left:12px;background:url('../../../image/common/bul/bul_stick.gif') 0 3px no-repeat;font-size:14px;font-weight:bold;font-family:"¸¼Àº °íµñ","Malgun Gothic";color:#333}
+.Guidewrap  > .cont h4.dot{margin-bottom:6px; padding-left:12px; line-height:160%; font-size:12px; font-weight:bold; vertical-align:top; background:url('../../../image/common/bul/bul_dot.gif') no-repeat 0 7px;}
+.Guidewrap  > .cont h4.dot + p{margin-left:12px}
+.Guidewrap  > .cont h5.dash {margin:0 0 4px 13px; padding-left:10px; line-height:160%; font-weight:normal; color:#4d4d4d; background:url('../../../image/common/bul/bul_bar.gif') 2px 10px no-repeat;}
+.Guidewrap  > .cont p.hText {margin:0 0 8px 0;/*margin:0 0 8px 12px;*/ line-height:160%; font-size:12px; color:#4d4d4d;}/* hÅÂ±× ¾Æ·¡¿¡ ¿À´Â ¹®Àå */
+.Guidewrap  > .cont ul.hText {margin:0 0 8px 12px;}/* hÅÂ±× ¾Æ·¡¿¡ ¿À´Â ¹®ÀåUL */
+.Guidewrap  > .cont .p{line-height:160%;margin-bottom:20px;font-family:"¸¼Àº °íµñ","Malgun Gothic";color:#4d4d4d; }
+.Guidewrap  > .cont .last{margin-bottom:37px}
+.Guidewrap  > .cont .h3Group{overflow:hidden;width:100%;float:left}
+.Guidewrap  > .cont .h3Group h3{float:left}
+.Guidewrap  > .cont.bg {background:#666;}
+.Guidewrap  > .cont h4.dot + .liBulDash, .Guidewrap > .cont h3 + .liBulDash, .Guidewrap > .cont h4.dot + p + .liBulDash{margin-left:10px !important;}
+
+.Guidewrap  > .cont02{ padding:15px 10px; border-bottom:1px solid #ddd; overflow:hidden}
+.Guidewrap  > .cont02 > div.inC{ overflow:hidden; margin-bottom:40px;}
+.Guidewrap  > .cont02 > .guideH3{ padding:10px 0 10px; color:#333; font-size:13px;}
+.Guidewrap  > .cont02 > .tit_h{line-height:150%;margin-bottom:20px;font-weight:bold;font-size:16px;font-family:"¸¼Àº °íµñ","Malgun Gothic";color:#333}
+.Guidewrap  > .cont02 > h3{line-height:120%;margin-bottom:20px;padding-left:12px;background:url('../../../image/common/bul/bul_stick.gif') 0 2px no-repeat;font-size:14px;font-weight:bold;font-family:"¸¼Àº °íµñ","Malgun Gothic";color:#333}
+.Guidewrap  > .cont02 .p{line-height:160%;margin-bottom:20px;font-family:"¸¼Àº °íµñ","Malgun Gothic";color:#4d4d4d; }
+.Guidewrap  > .cont02 .last{margin-bottom:37px}
+
+.tableIn {border-top:2px solid #5a4f4a; border-bottom:1px solid #bdbdbd;}
+.tableIn table .tHead td {text-align:center; color:#333; border-top:0 !important; background:#ebebeb;}
+.tableIn table td.tRow {font-weight:bold; text-align:center;}
+.tableIn table .tHead + tr > td {border-top:1px solid #a9a9a9;}
+

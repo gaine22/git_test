@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Step1 대출금액조회(보험계약대출신청) - 메트라이프생명</title>
+		<!-- jQuery v1.12.4 -->
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<link rel="stylesheet" href="../../css/metLife.css">
+	</head>
+	
+	<body>
+		<div id="skipNavi"> <a href="#MetLifeContent">본문 바로가기</a><a href="#MetLifeGnb">주메뉴 바로가기</a></div>
+		<div class="wrapper">
+			<header class="header">
+				<h1 class="logo"><a href="#none"><img src="../../images/logo_metlife.png" alt="MetLife"></a></h1>
+				<div class="groupL">
+					<a href="#menu" class="icoMenu exe_menu">메뉴 <span class="hide">열기</span></a>
+					<a href="#none" class="icoHome">홈</a>
+					
+					<div class="searchWrap">
+						<button type="button" class="exeSearch icoSearch">검색</button>
+						<div class="searchBoxWrap">
+							<div class="searchBox">
+								<input type="text" class="inpSearch" placeholder="검색">
+								<button type="button" class="btnSearch"><span>검색</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="groupR">
+					<a href="#none" class="icoLog">로그인</a>
+					<a href="#none" class="icoMetLife">메트라이프생명 홈</a>
+				</div>
+			</header>
+			
+			<!-- 전체메뉴 -->
+			<section id="menu" class="menuWrap">
+				<h1 class="hide">전체메뉴</h1>
+				<nav>
+					<ul class="allMenu">
+					<li>
+						<a href="#none">계약조회</a>
+						<ul> 
+						<li><a href="#none">통합정보조회</a></li>
+						<li><a href="#none">변액보험조회</a></li>
+						<li><a href="#none">e-모니터링</a></li>
+						<li><a href="#none">VUL</a></li>
+						<li><a href="#none">전자청약서류조회</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#none">보험료납입</a>
+						<ul>
+						<li><a href="#none">보험료납입</a></li>
+						<li><a href="#none">보험료자동대출신청</a></li>
+						<li><a href="#none">입출금내역조회</a></li>
+						<li><a href="#none">보험료납입일시중지</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#none">자동이체</a>
+						<ul> 
+						<li><a href="#none">자동이체신청</a></li> 
+						<li><a href="#none">자동이체해지</a></li> 
+						<li><a href="#none">정기추가납입신청</a></li> 
+						<li><a href="#none">정기추가납입해지</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">보험계약대출</a>
+						<ul> 
+						<li><a href="#none">보험계약대출신청</a></li> 
+						<li><a href="#none">보험료자동대출신청</a></li> 
+						<li><a href="#none">대출원리금상환</a></li> 
+						<li><a href="#none">자동대출원리금상환</a></li> 
+						<li><a href="#none">대출내역조회</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">변경</a>
+						<ul> 
+						<li><a href="#none">펀드변경</a></li> 
+						<li><a href="#none">계약변경내역조회</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">출금</a>
+						<ul> 
+						<li><a href="#none">종도인출</a></li> 
+						<li><a href="#none">분할보험금</a></li> 
+						<li><a href="#none">만기보험금</a></li> 
+						<li><a href="#none">배당금</a></li> 
+						<li><a href="#none">해지환급금</a></li> 
+						<li><a href="#none">휴면보험금</a></li> 
+						<li><a href="#none">청약철회</a></li> 
+						<li><a href="#none">입출금내역조회</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">보험금청구</a>
+						<ul> 
+						<li><a href="#none">접수절차안내</a></li> 
+						<li><a href="#none">팩스접수안내</a></li> 
+						<li><a href="#none">구비서류안내</a></li> 
+						<li><a href="#none">예상보험금조회</a></li> 
+						<li><a href="#none">인터넷보험금청구</a></li> 
+						<li><a href="#none">보험금지급내역조회</a></li> 
+						<li><a href="#none">보험범죄신고센터</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">개인정보변경</a>
+						<ul> 
+						<li><a href="#none">주소및정보변경</a></li> 
+						<li><a href="#none">마케팅동의및철회</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">증명서/구비서류</a>
+						<ul> 
+						<li><a href="#none">보험증권</a></li> 
+						<li><a href="#none">소득공제납입증명서</a></li> 
+						<li><a href="#none">보험료잔액증명서</a></li> 
+						<li><a href="#none">보험료납입서식</a></li> 
+						<li><a href="#none">제지급금서식</a></li>
+						<li><a href="#none">변경서식</a></li> 
+						</ul>
+					</li>
+					<li>
+						<a href="#none">인증센터</a>
+						<ul> 
+						<li><a href="#none">공인인증센터</a></li> 
+						<li><a href="#none">보안카드관리</a></li> 
+						</ul>
+					</li>
+					</ul>
+				</nav>
+				<button type="button" class="ui_close">닫기</button>
+			</section>
+			
+			<!-- sub -->
+			<section class="subNav">
+				<nav id="MetLifeGnb" class="uiMbGnb uiDrop">
+					<button type="button" class="uiDropBtn btnSelect">보험계약대출</button>
+					<ul class="uiDropCont">
+					<li class="on"><a href="#none">보험계약대출신청</a></li>
+					<li><a href="#none">보험료자동대출신청</a></li>
+					<li><a href="#none">대출원리금상환</a></li>
+					<li><a href="#none">자동대출원리금상환</a></li>
+					<li><a href="#none">대출내역조회</a></li>
+					</ul>
+				</nav>
+			</section>
+			
+			<section class="container">
+				<div class="pageLocation">
+					<a href="#none">홈</a>
+					<a href="#none">보험계약대출</a>
+					<span>보험계약대출신청</span>
+				</div>
+				<div class="containerWrap" id="MetLifeContent">
+					<h1>보험계약대출신청</h1>					
+					<div class="contUnit">
+						<div class="stepList">
+							<ul role="tablist">
+								<li class="active" role="tab" aria-selected="true"><span>1</span><strong>대출금액조회</strong></li>
+								<li role="tab"><span>2</span><strong>대출금액신청</strong></li>
+								<li role="tab"><span>3</span><strong>대출금액확인 및 실행</strong></li>
+								<li role="tab"><span>4</span><strong>대출결과확인</strong></li>
+							</ul>
+						</div>
+						<div class="infoBox">
+							<ul class="listHyphen">
+								<li>현재 홍길동님의 보험계약대출이 가능한 계약 내용입니다.</li>
+								<li>글로벌연금보험 상품은 사이버창구에서 조회 및 신청이 불가하며 지점 내방 또는 콜센터(1588-9600)에서 처리 가능합니다.</li>
+								<li>최대 대출가능금액과 사이버창구 대출가능 금액이 상이할 수 있습니다.</li>
+								<li>전자금융거래를 이용한 지급거래(보험계약대출, 중도인출, 해지)는 인별 1일 최대 1억원 까지 가능합니다.</li>
+								<li>출금 한도에 대한 별도의 신청이 없는 경우 인별 1일 최대 3천만원까지 가능합니다.</li>
+								<li>1일 출금 한도를 증액하거나 1일 한도 이상의 출금을 원하시는 경우 지점이나 고객플라자에 내방하시어 신청하시기 바랍니다.</li>
+								<li>보험계약대출 최소신청금액은 10만원이며, 만원단위로 신청하실 수 있습니다.</li>
+							</ul>
+						</div>
+						<h2>대출신청 금액조회 선택</h2>
+						<div class="tblTop">
+							<span><input type="radio" name="radio1" id="radio1_1" checked="checked"><label for="radio1_1">계약별 상환신청</label></span>
+							<span><input type="radio" name="radio1" id="radio1_2"><label for="radio1_2">일괄 상환신청</label></span>
+							<p class="tblInfo">(단위:원)</p>
+						</div>
+						<!-- 계약별 대출신청 선택시 -->
+						<table class="tblRsp">
+							<caption>대출신청 가능한 보험계약 목록</caption>
+							<colgroup>
+								<col style="width:13%">
+								<col style="width:auto">
+								<col style="width:7%">
+								<col style="width:7%">
+								<col style="width:12%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:9%">
+								<col style="width:12%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">증권번호</th>
+									<th scope="col">상품명</th>
+									<th scope="col">대출기간</th>
+									<th scope="col" class="txtR">대출한도</th>
+									<th scope="col">대출이율</th>
+									<th scope="col" class="txtR">기대출금액</th>
+									<th scope="col" class="txtR">대출가능금액</th>
+									<th scope="col">지급가능일</th>
+									<th scope="col">신청액(직접입력)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="9" class="noList">조회된 내역이 없습니다.</td>
+								</tr>
+								<tr>
+									<td class="int"><input type="checkbox" id="isNo01"><label for="isNo01">******5580</label></td>
+									<td class="int">무배당 스마트플랜 변액유니버셜보험</td>
+									<td data-title="대출기간">10년</td>
+									<td data-title="대출한도" class="txtR">50%</td>
+									<td data-title="대출이율">4.2%<br>(공시이율+1.5%)</td>
+									<td data-title="기대출금액" class="txtR">0</td>
+									<td data-title="대출가능금액" class="txtR"><button type="button" class="btnLine">조회</button></td>
+									<td data-title="지급가능일">2016/08/31</td>
+									<td data-title="신청액(직접입력)" class="inH"><input type="text" title="신청액" class="price w100"></td>
+								</tr>	
+								<tr>
+									<td class="int"><input type="checkbox" id="isNo01"><label for="isNo01">******5580</label></td>
+									<td class="int">무배당 스마트플랜 변액유니버셜보험</td>
+									<td data-title="대출기간">10년</td>
+									<td data-title="대출한도" class="txtR">50%</td>
+									<td data-title="대출이율">4.2%<br>(공시이율+1.5%)</td>
+									<td data-title="기대출금액" class="txtR">0</td>
+									<td data-title="대출가능금액" class="txtR">10,780,000</td>
+									<td data-title="지급가능일">2016/08/31</td>
+									<td data-title="신청액(직접입력)" class="inH"><input type="text" title="신청액" class="price w100"></td>
+								</tr>			
+							</tbody>
+						</table>
+						<div class="btnWrapC">
+							<a href="#none" class="btnMore">더보기</a> 
+						</div>
+						<div class="resultPrice qsTxt">
+							<div class="infoTxt">
+								<p class="listImp">전체 선택시 당일지급 가능건만 선택됩니다. 지급가능일이 상이한 경우 함께 처리하실 수 없으므로 증권번호별로 직접 선택하여 처리하여 주시기 바랍니다.</p>
+							</div>
+							<div class="realPrice">
+								<span>대출신청금액</span><strong>1,900,000</strong>
+							</div>
+						</div>						
+						<!--// 계약별 대출신청 선택시 -->
+						<!-- 일괄 대출신청 선택시  -->
+						<div class="amtFor">
+							<p>대출신청가능금액을 먼저 조회하시기 바랍니다.<span><button type="button" class="btnWht">조회</button></span></p>
+							<!-- 조회버튼 클릭시 생성되는 영역  -->
+							<div class="amtResult">
+								<ul class="listImp">
+									<li>신청일 현재 최저이율 상품부터 자동으로 계산되어 대출됩니다.</li>
+									<li>일부 계약은 인별대출가능금액에 포함되어 않습니다. 해당 계약은 아래 증권별로 직접 선택하여 처리하여 주시기 바랍니다. (인별대출 제외 계약:지급가능일이 D+2일인 계약, VUL 종신 II 계약)</li>
+								</ul>
+								<div class="resultPrice">
+									<dl>
+										<dt>대출신청 가능 총 금액</dt>
+										<dd>13,100,000</dd>
+										<dt>기대출잔고합계<span>(자동대출금액포함)</span></dt>
+										<dd>13,100,000</dd>
+									</dl>									
+								</div>
+								<div class="amtSet">
+									<span>원하시는 대출신청 금액을 입력 후 대출 신청 버튼을 누르세요</span>
+									<p>
+										<label for="price">대출신청금액</label>
+										<input type="text" id="price">
+									</p>
+								</div>							
+							</div>
+							<!--// 조회버튼 클릭시 생성되는 영역 -->
+						</div>
+						<!--// 일괄  상환신청 선택시 -->
+						<div class="btnWrap">
+							<a href="#none" class="btnCont">대출신청</a>
+							<a href="#none" class="btnLine" target="blank" title="새창 이동">보험계약대출 원리금 상환방법</a>
+						</div>
+
+						<div class="lnContBox">
+							<strong class="infoTit">알려드려요!</strong>
+							<ul class="listDot">
+								<li>2005년 4월 1일 이후 계약건이 실효인 경우 대출받으실 수 없습니다.</li>
+								<li>계약은 신청일 현재 최저이율부터 조회되었습니다.</li>
+								<li>기대출금액은 보험계약대출과 자동대출이 합산된 금액입니다.</li>
+								<li>보험계약대출 가능 기간은 '년'단위로 산출되며, '년' 미만시 절사처리됩니다.</li>
+								<li>보험계약대출 한도는 보험계약대출 대상계약의 해약환급금 이내입니다. 단, 만기보험금이 해약환급금보다 적을 경우, 만기보험금 기준으로 대출한도가 산출됩니다.</li>
+								<li>보험계약대출 이자율 산정기준 : 기준이율 + 가산이율</li>
+								<li>기준금리는 보험계약의 준비금(적립금)에 분리되는 이율로서 확정금리형은 '예정이율', 금리연동형은 '공시이율'을 의미합니다.</li>
+								<li>가산이율은 보험계약대출에 소요되는 각종비용등을 감안하여 산정하며 회사의 변경절차에 따라 변동될 수 있습니다.</li>
+								<li>(예시)확정금리형 보험계약의 예정이율이 5%인 경우, 보험계약대출의 금리는 '5%(예정이율)' + 가산이율이 되며, 보험계약자가 보험계약대출을 받더라도 보험회사는 전체보험료 준비금(적립금)을 예정이율로 분리하기 때문에, 실질적으로 보험계약자가 부담하는 이자는 가산이율에 해당하는 부분입니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="faqWrap">
+						<div class="hWrap">
+							<h2>FAQ</h2>
+							<p class="tblInfo">전체글수 : 36</p>
+						</div>						
+						<div class="uiAcco accoBase">
+							<div class="accoWrap">
+								<div class="acBtnWrap">
+									<strong class="accoTit" id="acco1">사이버창구에 회원가입하려면 어떻게 해야 하나요?</strong>
+									<a href="#panel1" class="accoBtn"><span class="txt">열기</span></a>
+								</div>
+								<div id="panel1" class="accoPnl">
+									사이버창구는 메트라이프생명에 유효한 계약을 보유하고 계신 계약자 본인만 이용하실 수 있으며 별도의 가입비용이 없습니다.<br>
+									계약자 본인(보험계약자 기준)께서 신분증을 가지고 가까운 지점이나 고객플라자에 내방하시어 전자금융거래신청을 하신 후 사이버창구에 접속하시어 전자금융거래이용약관에 동의하시면 회원가입이 완료됩니다.<br>
+									계약자 명의의공인인증서 사용도 가능합니다.
+								</div>
+							</div>
+							<div class="accoWrap">
+								<div class="acBtnWrap">
+									<strong class="accoTit" id="acco2">로그인이 되지 않을 경우에는 어떻게 하나요?</strong>
+									<a href="#panel2" class="accoBtn"><span class="txt">열기</span></a>
+								</div>
+								<div id="panel2" class="accoPnl">
+									사이버창구는 메트라이프생명에 유효한 계약을 보유하고 계신 계약자 본인만 이용하실 수 있으며 별도의 가입비용이 없습니다.<br>
+									계약자 본인(보험계약자 기준)께서 신분증을 가지고 가까운 지점이나 고객플라자에 내방하시어 전자금융거래신청을 하신 후 사이버창구에 접속하시어 전자금융거래이용약관에 동의하시면 회원가입이 완료됩니다.<br>
+									계약자 명의의공인인증서 사용도 가능합니다.
+								</div>
+							</div>
+							<div class="accoWrap">
+								<div class="acBtnWrap">
+									<strong class="accoTit" id="acco3">아이디 로그인 사용 신청은 어떻게 하나요?</strong>
+									<a href="#panel3" class="accoBtn"><span class="txt">열기</span></a>
+								</div>
+								<div id="panel3" class="accoPnl">
+									사이버창구는 메트라이프생명에 유효한 계약을 보유하고 계신 계약자 본인만 이용하실 수 있으며 별도의 가입비용이 없습니다.<br>
+									계약자 본인(보험계약자 기준)께서 신분증을 가지고 가까운 지점이나 고객플라자에 내방하시어 전자금융거래신청을 하신 후 사이버창구에 접속하시어 전자금융거래이용약관에 동의하시면 회원가입이 완료됩니다.<br>
+									계약자 명의의공인인증서 사용도 가능합니다.
+								</div>
+							</div>
+							<div class="accoWrap">
+								<div class="acBtnWrap">
+									<strong class="accoTit" id="acco4">비밀번호 로그인 시 5회 잘못 입력하였거나 잊어버린 경우 어떻게 해야 하나요?</strong>
+									<a href="#panel4" class="accoBtn"><span class="txt">열기</span></a>
+								</div>
+								<div id="panel4" class="accoPnl">
+									사이버창구는 메트라이프생명에 유효한 계약을 보유하고 계신 계약자 본인만 이용하실 수 있으며 별도의 가입비용이 없습니다.<br>
+									계약자 본인(보험계약자 기준)께서 신분증을 가지고 가까운 지점이나 고객플라자에 내방하시어 전자금융거래신청을 하신 후 사이버창구에 접속하시어 전자금융거래이용약관에 동의하시면 회원가입이 완료됩니다.<br>
+									계약자 명의의공인인증서 사용도 가능합니다.
+								</div>
+							</div>
+							<div class="accoWrap">
+								<div class="acBtnWrap">
+									<strong class="accoTit" id="acco5">가입한 보험이 조회되지 않는데 왜 그런가요?</strong>
+									<a href="#panel5" class="accoBtn"><span class="txt">열기</span></a>
+								</div>
+								<div id="panel5" class="accoPnl">
+									사이버창구는 메트라이프생명에 유효한 계약을 보유하고 계신 계약자 본인만 이용하실 수 있으며 별도의 가입비용이 없습니다.<br>
+									계약자 본인(보험계약자 기준)께서 신분증을 가지고 가까운 지점이나 고객플라자에 내방하시어 전자금융거래신청을 하신 후 사이버창구에 접속하시어 전자금융거래이용약관에 동의하시면 회원가입이 완료됩니다.<br>
+									계약자 명의의공인인증서 사용도 가능합니다.
+								</div>
+							</div>
+							<div class="btnWrap">
+								<button type="button" class="btnMore">더보기</button>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</section>
+			<footer class="footer">
+				<div class="footerWrap">
+					<nav>
+						<ul class="totalMenu">
+						<li>
+							<strong>계약조회</strong>
+							<ul> 
+							<li><a href="#none">통합정보조회</a></li> 
+							<li><a href="#none">변액보험조회</a></li> 
+							<li><a href="#none">e-모니터링</a></li> 
+							<li><a href="#none">전자청약서류조회</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong>보험료납입</strong>
+							<ul> 
+							<li><a href="#none">보험료납입</a></li> 
+							<li><a href="#none">보험료자동대출신청</a></li> 
+							<li><a href="#none">입출금내역조회</a></li> 
+							<li><a href="#none">보험료납입일시중지</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>자동이체</strong>
+							<ul> 
+							<li><a href="#none">자동이체신청</a></li> 
+							<li><a href="#none">자동이체해지</a></li> 
+							<li><a href="#none">정기추가납입신청</a></li> 
+							<li><a href="#none">정기추가납입해지</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>보험계약대출</strong>
+							<ul> 
+							<li><a href="#none">보험계약대출신청</a></li> 
+							<li><a href="#none">보험료자동대출신청</a></li> 
+							<li><a href="#none">대출원리금상환</a></li> 
+							<li><a href="#none">자동대출원리금상환</a></li> 
+							<li><a href="#none">대출내역조회</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>변경</strong>
+							<ul> 
+							<li><a href="#none">펀드변경</a></li> 
+							<li><a href="#none">계약변경내역조회</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>출금</strong>
+							<ul> 
+							<li><a href="#none">종도인출</a></li> 
+							<li><a href="#none">분할보험금</a></li> 
+							<li><a href="#none">만기보험금</a></li> 
+							<li><a href="#none">배당금</a></li> 
+							<li><a href="#none">해지환급금</a></li> 
+							<li><a href="#none">휴면보험금</a></li> 
+							<li><a href="#none">청약철회</a></li> 
+							<li><a href="#none">입출금내역조회</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>사고보험금</strong>
+							<ul> 
+							<li><a href="#none">접수절차안내</a></li> 
+							<li><a href="#none">팩스접수안내</a></li> 
+							<li><a href="#none">구비서류안내</a></li> 
+							<li><a href="#none">예상사고보험금조회</a></li> 
+							<li><a href="#none">인터넷사고보험금청구</a></li> 
+							<li><a href="#none">사고보험금지급내역조회</a></li> 
+							<li><a href="#none">보험범죄신고센터</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>개인정보변경</strong>
+							<ul> 
+							<li><a href="#none">주소및정보변경</a></li> 
+							<li><a href="#none">마케팅동의및철회</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong>증명서/서식</strong>
+							<ul> 
+							<li><a href="#none">보험증권</a></li> 
+							<li><a href="#none">소득공제납입증명서</a></li> 
+							<li><a href="#none">보험료잔액증명서</a></li> 
+							<li><a href="#none">보험료납입서식</a></li> 
+							<li><a href="#none">제지급금서식</a></li>
+							<li><a href="#none">변경서식</a></li> 
+							</ul>
+						</li>
+						<li>
+							<a href="http://corp.metlife.co.kr:83/jsp/ws/cybr/retfund_login.jsp?loginType=1" target="_blank" title="새창 열림">퇴직연금 로그인</a>
+							<a href="http://www.metlife.co.kr" target="_blank" title="새창 열림">메트라이프생명 홈</a>
+						</li>
+						</ul>
+					</nav>
+					<section class="footerItem">
+						<div class="globalLang">
+							<strong>국가선택</strong>
+							<div class="uiCountry uiDrop">
+								<button type="button" class="uiDropBtn btnSelect">south Korea</button>
+								<div class="uiDropCont">
+									<strong>America</strong>
+									<ul>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagUSA">USA</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagArgentina">Argentina</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagBrazil">Brazil</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagChile">Chile</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagChile">Chile ProVida</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagColombia">Colombia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagMexico">Mexico</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagUruguay">Uruguay</a></li>
+									</ul>
+									<strong>Asia</strong>
+									<ul>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagAustralia">Australia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagBangladesh">Bangladesh</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagChina">China</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagHongKong">Hong Kong</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagIndia">India</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagJapan">Japan</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagKorea">Korea</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagMalaysia">Malaysia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagNepal">Nepal</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagVitenam">Vitenam</a></li>
+									</ul>
+									<strong>Europe</strong>
+									<ul>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagBulgaria">Bulgaria</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagCzech">Czech Republic</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagCyprus">Cyprus</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagFrance">France</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagGreece">Greece</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagHungary">Hungary</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagIreland">Ireland</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagItaly">Italy</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagPoland">Poland</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagPortugal">Portugal</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagRomania">Romania</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagRussia">Russia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagSlovakia">Slovakia</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagSpain">Spain</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagTurkey">Turkey</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagUkraine">Ukraine</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagKingdom">United Kingdom</a></li>
+									</ul>
+									<strong>Middle East and Africa</strong>
+									<ul>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagBahrain">Bahrain</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagEgypt">Egypt</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagJordan">Jordan</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagKuwait">Kuwait</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagLebanon">Lebanon</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagOmen">Omen</a></li>
+										<li><a href="#none" target="_blank" title="새창열림" class="flagArab">United Arab Emirates</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="globalMain">
+							<a href="#none" target="_blank" title="새창열림">MetLife Worldwide</a>
+						</div>
+					</section>
+					<section class="footerBottom">
+						<div class="footerLogo">
+							<img src="../../images/logo_metlife.png" alt="MetLife">
+							<strong>콜센터 : 1588-9600</strong>
+						</div>
+						<div class="sns">
+							<a href="#none" target="_blank" title="새창열림"><span>메트라이프</span> 공식 페이스북</a>
+						</div>
+						<div class="footerMenu">
+							<a href="#none">개인정보 처리방침</a>
+							<div class="fmenu uiDrop">
+								<button type="button" class="uiDropBtn btnSelect">약관 및 정책</button>
+								<ul class="footerSub uiDropCont">
+									<li><a href="#none">전자금융서비스 이용약관</a></li>
+									<li><a href="#none">전자금융서비스 기본약관</a></li>
+									<li><a href="#none">휴대폰 인증 전문</a></li>
+									<li><a href="#none">보험범죄신고센터</a></li>
+									<li><a href="#none">장애인 보험가입차별 신고센터</a></li>
+									<li><a href="#none">보호금융상품등록부</a></li>
+									<li><a href="#none">서민금융 1332</a></li>
+									<li><a href="#none">웹접근성 안내</a></li>
+									<li><a href="#none">본인정보 이용제공 조회</a></li>
+									<li><a href="#none">개인신용정보 이용현황 조회</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="copy">
+							서울시 강남구 테헤란로 316(역삼2동, 메트라이프타워) <strong>콜센터 : 국내 1588-9600 해외 : +82-2-2017-6700</strong>
+							<p>&copy; 2017 메트라이프생명보험(주) All Rights Reserved.</p>
+						</div>
+						<div class="authMark">
+							<img src="../../images/img_auth01.png" alt="국제정보보호표준 ISO27001인증기업 마크">
+							<img src="../../images/img_auth02.png" alt="미래창조과학부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+						</div>
+					</section>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
